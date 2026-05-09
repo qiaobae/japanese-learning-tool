@@ -1,0 +1,115 @@
+// speaker: 'you' | 'staff' | 'other'
+export const dialogues = [
+  {
+    id: 'ramen',
+    title: 'Ordering Ramen',
+    icon: '🍜',
+    setting: 'You walk into a busy ramen shop. A server greets you as you enter.',
+    tip: 'Many ramen shops have ticket machines (券売機) at the entrance — buy your ticket first, then hand it to the staff. This dialogue assumes table service.',
+    turns: [
+      { speaker:'staff', jp:'いらっしゃいませ！何名様ですか？', romaji:'Irasshaimase! Nanmei-sama desu ka?', en:'Welcome! How many people?', note:'いらっしゃいませ is the universal welcome — you never need to say it yourself.' },
+      { speaker:'you',   jp:'一人です。', romaji:'Hitori desu.', en:'Just one.', note:'For 2 people: 二人です (futari desu). For 3+: 三人です (sannin desu) etc.' },
+      { speaker:'staff', jp:'こちらへどうぞ。', romaji:'Kochira e dōzo.', en:'Right this way, please.', note:'Follow them. They may place an oshibori (wet towel) on the table — use it to wipe your hands.' },
+      { speaker:'staff', jp:'ご注文はお決まりですか？', romaji:'Go-chūmon wa okimari desu ka?', en:'Have you decided on your order?', note:'They\'ll come back once you\'ve had a chance to look at the menu.' },
+      { speaker:'you',   jp:'醤油ラーメンをひとつください。', romaji:'Shōyu rāmen wo hitotsu kudasai.', en:'One soy sauce ramen please.', note:'Swap 醤油 for: 豚骨 (tonkotsu/pork bone), 塩 (shio/salt), 味噌 (miso).' },
+      { speaker:'staff', jp:'麺の硬さはいかがですか？', romaji:'Men no katasa wa ikaga desu ka?', en:'How would you like the noodle firmness?', note:'Common at many ramen shops, especially Hakata/tonkotsu places.' },
+      { speaker:'you',   jp:'普通でお願いします。', romaji:'Futsū de onegaishimasu.', en:'Regular please.', note:'Options: 硬め (katame=firm), 普通 (futsū=regular), 柔らかめ (yawarakame=soft).' },
+      { speaker:'staff', jp:'かしこまりました。少々お待ちください。', romaji:'Kashikomarimashita. Shōshō omachi kudasai.', en:'Certainly. Please wait a moment.', note:'かしこまりました is the very formal "understood." You\'ll hear this in good restaurants.' },
+      { speaker:'you',   jp:'（食事の前）いただきます！', romaji:'(Before eating) Itadakimasu!', en:'Let\'s eat! (said before first bite)', note:'Put hands together briefly if you like. Locals always say this before eating.' },
+      { speaker:'you',   jp:'おいしい！', romaji:'Oishii!', en:'Delicious!', note:'Say this genuinely — chefs and staff love to hear it.' },
+      { speaker:'you',   jp:'すみません、お会計をお願いします。', romaji:'Sumimasen, okaikei wo onegaishimasu.', en:'Excuse me, the check please.', note:'Wave hand slightly or raise it to get attention, then say this.' },
+      { speaker:'staff', jp:'八百五十円です。', romaji:'Happyakugojū-en desu.', en:'¥850.', note:'Hand over cash or card. Exact change is appreciated but not required.' },
+      { speaker:'you',   jp:'ごちそうさまでした！', romaji:'Gochisōsama deshita!', en:'Thank you for the meal! (said when leaving)', note:'Say this as you leave — it means "it was a feast." Deeply appreciated by all restaurant staff.' },
+      { speaker:'staff', jp:'またお越しください！', romaji:'Mata okoshi kudasai!', en:'Please come again!', note:'You\'ve made a good impression. Bow slightly as you leave.' },
+    ]
+  },
+
+  {
+    id: 'station',
+    title: 'Buying a Train Ticket',
+    icon: '🚂',
+    setting: 'You\'re at a busy train station and need to get to Shibuya. You approach a station staff member.',
+    tip: 'Save yourself the hassle: get a Suica or Pasmo IC card at any major station. Tap in, tap out, automatic fare deduction. Works on almost all trains, buses, and convenience stores.',
+    turns: [
+      { speaker:'you',   jp:'すみません、渋谷駅に行きたいのですが。', romaji:'Sumimasen, Shibuya-eki ni ikitai no desu ga.', en:'Excuse me, I\'d like to go to Shibuya station.', note:'The trailing が makes it softer — "I want to go to Shibuya, but..." The implication is "what should I do?" Very natural phrasing.' },
+      { speaker:'staff', jp:'山手線で行けますよ。一番線です。', romaji:'Yamanote-sen de ikemasu yo. Ichiban-sen desu.', en:'You can go on the Yamanote line. It\'s platform 1.', note:'山手線 (Yamanote-sen) is Tokyo\'s iconic loop line — green.' },
+      { speaker:'you',   jp:'ありがとうございます。切符はどこで買えますか？', romaji:'Arigatou gozaimasu. Kippu wa doko de kaemasu ka?', en:'Thank you. Where can I buy a ticket?', note:'They\'ll point you to the 自動券売機 (jidō-kenbaiki = automatic ticket machine).' },
+      { speaker:'staff', jp:'あちらの券売機でどうぞ。', romaji:'Achira no kenbaiki de dōzo.', en:'At the ticket machine over there please.', note:'Find the fare map on the wall, locate your destination, note the price, then buy that price.' },
+      { speaker:'you',   jp:'渋谷まで大人一枚ください。', romaji:'Shibuya made otona ichimai kudasai.', en:'One adult ticket to Shibuya please.', note:'At a staffed counter. For the machine: just select the amount from the fare map.' },
+      { speaker:'you',   jp:'（改札にて）あの、Suicaをチャージしたいのですが。', romaji:'Ano, Suica wo chāji shitai no desu ga.', en:'Um, I\'d like to charge my Suica.', note:'あの is a filler word like "um" — very natural and friendly. Suica machines are green, Pasmo are pink.' },
+      { speaker:'staff', jp:'あちらのチャージ機でできます。', romaji:'Achira no chāji-ki de dekimasu.', en:'You can do it at the charging machine over there.', note:'Insert cash → select amount → done. ¥1,000 at a time is easiest.' },
+      { speaker:'you',   jp:'（乗車後）すみません、この電車は渋谷に止まりますか？', romaji:'Sumimasen, kono densha wa Shibuya ni tomarimasu ka?', en:'Excuse me, does this train stop at Shibuya?', note:'Ask a fellow passenger if unsure. People are generally happy to help even with minimal Japanese.' },
+      { speaker:'other', jp:'はい、止まりますよ。三つ目の駅です。', romaji:'Hai, tomarimasu yo. Mittsu-me no eki desu.', en:'Yes it does. It\'s the third station.', note:'三つ目 (mittsu-me) = the third one. Very useful pattern: ひとつ目 (first), 二つ目 (second), 三つ目 (third).' },
+      { speaker:'you',   jp:'ありがとうございます！助かりました。', romaji:'Arigatou gozaimasu! Tasukarimashita.', en:'Thank you! You\'ve saved me.', note:'助かりました (tasukarimashita) = "you saved me / you helped me greatly." Very warm expression of gratitude.' },
+    ]
+  },
+
+  {
+    id: 'hotel',
+    title: 'Hotel Check-in',
+    icon: '🏨',
+    setting: 'You arrive at your hotel after a long flight. You approach the front desk.',
+    tip: 'Always carry your passport. Hotels are required to see it. Many upscale hotels have English-speaking staff, but using even a few Japanese phrases will delight them.',
+    turns: [
+      { speaker:'you',   jp:'チェックインをお願いします。', romaji:'Chekkuin wo onegaishimasu.', en:'Check in please.' },
+      { speaker:'staff', jp:'ご予約のお名前をお聞かせいただけますか？', romaji:'Go-yoyaku no onamae wo okikase itadakemasu ka?', en:'May I have the name on your reservation?', note:'This is very polite formal speech. They\'re asking for your name for the booking.' },
+      { speaker:'you',   jp:'〇〇（名前）と申します。', romaji:'~ to mōshimasu.', en:'My name is ~ .', note:'と申します (to mōshimasu) is the humble/formal "my name is". Casual: です (desu).' },
+      { speaker:'staff', jp:'〇〇様ですね。パスポートをご提示いただけますか？', romaji:'~-sama desu ne. Pasupōto wo goteiji itadakemasu ka?', en:'Mr/Ms ~. Could I see your passport please?', note:'様 (sama) after your name is an extremely polite honorific. Higher than さん.' },
+      { speaker:'you',   jp:'はい、どうぞ。', romaji:'Hai, dōzo.', en:'Yes, here you go.', note:'Hand over your passport. They\'ll photocopy it and hand it back.' },
+      { speaker:'staff', jp:'こちらがお部屋の鍵でございます。お部屋は305号室です。', romaji:'Kochira ga oheya no kagi de gozaimasu. Oheya wa sanmaru-go-gōshitsu desu.', en:'Here is your room key. Your room is 305.', note:'号室 (gōshitsu) = room number. でございます is the most polite form of です — you\'ll hear it in hotels.' },
+      { speaker:'you',   jp:'WiFiのパスワードを教えていただけますか？', romaji:'Waifai no pasuwādo wo oshiete itadakemasu ka?', en:'Could you tell me the WiFi password?', note:'They\'ll usually hand you a card. Many hotels have the password in the room already.' },
+      { speaker:'staff', jp:'こちらのカードにございます。', romaji:'Kochira no kādo ni gozaimasu.', en:'It\'s on this card here.', note:'They\'ll hand you a welcome card with WiFi details.' },
+      { speaker:'you',   jp:'朝食は何時から何時までですか？', romaji:'Chōshoku wa nanji kara nanji made desu ka?', en:'What are the breakfast hours?', note:'から (kara) = from, まで (made) = until. This pattern is very useful.' },
+      { speaker:'staff', jp:'七時から十時まででございます。', romaji:'Shichi-ji kara jū-ji made de gozaimasu.', en:'From 7:00 to 10:00.', note:'Seven (shichi-ji) to ten (jū-ji) o\'clock.' },
+      { speaker:'you',   jp:'ありがとうございます。よろしくお願いします。', romaji:'Arigatou gozaimasu. Yoroshiku onegaishimasu.', en:'Thank you. I look forward to your care.', note:'よろしくお願いします here means "I entrust myself to you" or "please take good care of me" — said when arriving at a hotel, starting a new relationship, etc.' },
+      { speaker:'staff', jp:'ごゆっくりお過ごしください。', romaji:'Go-yukkuri osugoshi kudasai.', en:'Please enjoy your stay at a leisurely pace.', note:'Beautiful farewell phrase from hotel staff. ゆっくり = leisurely/slowly. They want you to relax.' },
+    ]
+  },
+
+  {
+    id: 'izakaya',
+    title: 'Night at an Izakaya',
+    icon: '🍻',
+    setting: 'You and a friend find an izakaya (Japanese gastropub) after exploring the city. A staff member greets you at the door.',
+    tip: 'Izakayas are made for sharing — order lots of small dishes (おつまみ otsumami) alongside drinks. It\'s totally fine to keep ordering throughout the night. Closing time is usually marked by last order (ラストオーダー), not a hard closing.',
+    turns: [
+      { speaker:'staff', jp:'いらっしゃいませ！何名様ですか？', romaji:'Irasshaimase! Nanmei-sama desu ka?', en:'Welcome! How many?' },
+      { speaker:'you',   jp:'二人です。禁煙席をお願いします。', romaji:'Futari desu. Kin\'enseki wo onegaishimasu.', en:'Two people. Non-smoking please.', note:'Some izakayas still allow smoking. Specify 禁煙席 (non-smoking) or 喫煙席 (smoking).' },
+      { speaker:'staff', jp:'こちらへどうぞ。お飲み物はいかがですか？', romaji:'Kochira e dōzo. Onomimono wa ikaga desu ka?', en:'This way please. What would you like to drink?', note:'They often ask for drinks immediately — izakayas run on the drinking order.' },
+      { speaker:'you',   jp:'とりあえず生ビールを二つください！', romaji:'Toriaezu nama bīru wo futatsu kudasai!', en:'For now, two draft beers please!', note:'とりあえず (toriaezu = "for now, first things first") is a beloved izakaya opening phrase. Makes everyone smile.' },
+      { speaker:'staff', jp:'かしこまりました。おつまみはこちらのメニューをどうぞ。', romaji:'Kashikomarimashita. Otsumami wa kochira no menyū wo dōzo.', en:'Certainly. For snacks please take a look at this menu.', note:'おつまみ = bar snacks / appetizers. Some izakayas have touchscreen ordering.' },
+      { speaker:'you',   jp:'枝豆と唐揚げと、あとおすすめは何ですか？', romaji:'Edamame to karaage to, ato osusume wa nan desu ka?', en:'Edamame and fried chicken — and what else do you recommend?', note:'This phrase is gold. Ask for the recommendation and let them surprise you.' },
+      { speaker:'staff', jp:'本日は刺盛りがおすすめです！', romaji:'Honjitsu wa sashimori ga osusume desu!', en:'Today we recommend the sashimi platter!', note:'本日 (honjitsu) = today (formal). 刺盛り (sashimori) = assorted sashimi platter.' },
+      { speaker:'you',   jp:'じゃあそれもください。', romaji:'Jā sore mo kudasai.', en:'Then we\'ll have that too.', note:'じゃあ (jā) = then/well then. Very natural transition phrase.' },
+      { speaker:'you',   jp:'（ビールが届いて）乾杯！', romaji:'(Beers arrive) Kanpai!', en:'Cheers!', note:'Make eye contact while clinking glasses. It\'s considered rude not to. Both people say it simultaneously.' },
+      { speaker:'you',   jp:'すみません！もう一杯お願いします。今度は梅酒ソーダで。', romaji:'Sumimasen! Mō ippai onegaishimasu. Kondo wa umeshu sōda de.', en:'Excuse me! Another round please. This time plum wine soda.', note:'今度は (kondo wa) = this time. Wave or catch eye contact to get staff attention.' },
+      { speaker:'you',   jp:'締めに何がありますか？', romaji:'Shime ni nani ga arimasu ka?', en:'What do you have for the final dish?', note:'締め (shime) = the closing dish. Classic choices: ラーメン (ramen), 雑炊 (zōsui=rice porridge), お茶漬け (ochazuke=rice in broth).' },
+      { speaker:'staff', jp:'ラーメン、雑炊、うどんがございます。', romaji:'Rāmen, zōsui, udon ga gozaimasu.', en:'We have ramen, rice porridge, and udon.', note:'Order whatever sounds good. The shime soaks up the alcohol — it\'s tradition.' },
+      { speaker:'you',   jp:'お会計をお願いします。割り勘でもいいですか？', romaji:'Okaikei wo onegaishimasu. Warikan demo ii desu ka?', en:'Check please. Can we split it evenly?', note:'割り勘 (warikan) = Dutch treat / splitting evenly. Very normal in Japan. Always ask before they total it.' },
+      { speaker:'staff', jp:'三千二百円です。おひとり千六百円になります。', romaji:'Sanzen nihyaku-en desu. Ohitori sennroppyaku-en ni narimasu.', en:'¥3,200 total. That\'s ¥1,600 per person.', note:'Staff will often do the math for you when you say 割り勘.' },
+      { speaker:'you',   jp:'ごちそうさまでした！また来ます！', romaji:'Gochisōsama deshita! Mata kimasu!', en:'Thanks for the great food and drinks! We\'ll be back!', note:'また来ます (mata kimasu) = "we\'ll come again" — music to any restaurant owner\'s ears.' },
+    ]
+  },
+
+  {
+    id: 'convenience',
+    title: 'Convenience Store (コンビニ)',
+    icon: '🏪',
+    setting: 'You\'re at a 7-Eleven picking up a bento box and some snacks. Japanese convenience stores are an experience in themselves.',
+    tip: 'Konbinis are open 24/7 and sell everything: hot food, onigiri, fresh sandwiches, ATMs, bill payment, printing, umbrella rental, and more. The staff interactions are short but scripted — learn these and you\'ll never be lost.',
+    turns: [
+      { speaker:'staff', jp:'いらっしゃいませ！', romaji:'Irasshaimase!', en:'Welcome!', note:'You don\'t need to respond. Just browse.' },
+      { speaker:'staff', jp:'温めますか？', romaji:'Atatamemasu ka?', en:'Shall I heat this up?', note:'They ask this for any bento, onigiri, or hot food item. Say はい (yes) or いいえ (no). This is the #1 phrase you\'ll hear at konbinis.' },
+      { speaker:'you',   jp:'はい、お願いします。', romaji:'Hai, onegaishimasu.', en:'Yes please.', note:'Hand them the item and they\'ll microwave it. Takes 1-2 minutes.' },
+      { speaker:'staff', jp:'袋はご利用ですか？', romaji:'Fukuro wa goriyō desu ka?', en:'Would you like a bag?', note:'Plastic bag fee is ~¥5. Bring a tote bag or just say いいえ and carry it.' },
+      { speaker:'you',   jp:'いいえ、大丈夫です。', romaji:'Iie, daijōbu desu.', en:'No, I\'m fine thanks.', note:'Or: はい、ください if you want one.' },
+      { speaker:'staff', jp:'ポイントカードはお持ちですか？', romaji:'Pointo kādo wa omochi desu ka?', en:'Do you have a points card?', note:'7-Eleven has 7iD, Lawson has Ponta, FamilyMart has T-card. If not: いいえ、ありません。' },
+      { speaker:'you',   jp:'いいえ、ありません。', romaji:'Iie, arimasen.', en:'No, I don\'t.' },
+      { speaker:'staff', jp:'千二百円になります。', romaji:'Sen nihyaku-en ni narimasu.', en:'That\'ll be ¥1,200.', note:'なります (narimasu) = "it becomes / that will be" — polite way to state a price.' },
+      { speaker:'you',   jp:'カードで払えますか？', romaji:'Kādo de haraemasu ka?', en:'Can I pay by card?', note:'Most konbinis accept IC cards (Suica), credit cards, and QR code payments. Just tap your Suica!' },
+      { speaker:'staff', jp:'はい、こちらへどうぞ。', romaji:'Hai, kochira e dōzo.', en:'Yes, this way please.', note:'They\'ll gesture to the card reader. Tap/insert your card.' },
+      { speaker:'staff', jp:'二百円のお返しです。', romaji:'Nihyaku-en no okaeshi desu.', en:'Here\'s ¥200 change.', note:'お返し (okaeshi) = change (money back). If you pay by card, there\'s no change.' },
+      { speaker:'staff', jp:'ありがとうございました！', romaji:'Arigatou gozaimashita!', en:'Thank you very much!', note:'Past tense ございました — they thank you for the completed transaction. Just nod and bow slightly.' },
+    ]
+  },
+];
