@@ -585,6 +585,166 @@ export const intermediateSections = [
           },
         ]
       },
+      {
+        title: 'Relative Clauses — Noun Modification',
+        note: 'Japanese places ALL modifiers BEFORE the noun — the entire clause acts as an adjective. Use plain form only (not ます). No relative pronoun ("that/which/who") is needed: 私が昨日読んだ本 = "the book I read yesterday".',
+        phrases: [
+          {
+            jp:'[plain-form clause] + noun',
+            romaji:'[clause] + noun',
+            en:'The [noun] that [clause describes]',
+            tip:'The modifier wraps around the noun from the left. Any verb in plain form can modify: 食べた → 食べたもの (the thing I ate), 行く → 行く場所 (the place I\'m going).',
+            examples:[
+              { jp:'私が昨日読んだ本はとても面白かった。', romaji:'Watashi ga kinō yonda hon wa totemo omoshirokatta.', en:'The book I read yesterday was very interesting.' },
+              { jp:'彼女が作ってくれた料理がおいしかった。', romaji:'Kanojo ga tsukutte kureta ryōri ga oishikatta.', en:'The food she made for me was delicious.' },
+            ],
+            zh:'我读的书 / 她做的菜', pinyin:'wǒ dú de shū', zhNote:'Chinese uses 的 after the clause: 我昨天读的书. Japanese uses plain verb + noun with no extra particle. Same left-to-right modifier logic.'
+          },
+          {
+            jp:'〜の (noun substitute)',
+            romaji:'~no',
+            en:'The one that ~ / the thing that ~',
+            tip:'の replaces a known noun to avoid repetition. 赤いのをください = please give me the red one.',
+            examples:[
+              { jp:'安いのはありますか？', romaji:'Yasui no wa arimasu ka?', en:'Do you have a cheaper one?' },
+              { jp:'昨日話していたのはこれですか？', romaji:'Kinō hanashite ita no wa kore desu ka?', en:'Is this the thing you were talking about yesterday?' },
+            ],
+            zh:'～的（那个）', pinyin:'~ de (nà gè)', zhNote:'の as noun substitute = Chinese 的 used pronominally (便宜的、红的).'
+          },
+          {
+            jp:'〜という＋noun',
+            romaji:'~to iu + noun',
+            en:'A [noun] called ~ / the [noun] known as ~',
+            tip:'Defines or names something. 侘び寂びという概念 = "the concept called wabi-sabi". Also useful: 〜というのは = "as for the thing called ~".',
+            examples:[
+              { jp:'「木漏れ日」という言葉を知っていますか？', romaji:'「Komorebi」to iu kotoba wo shitte imasu ka?', en:'Do you know the word called "komorebi"?' },
+              { jp:'田中という人から電話がありました。', romaji:'Tanaka to iu hito kara denwa ga arimashita.', en:'There was a call from a person called Tanaka.' },
+            ],
+            zh:'叫做～的 / 所谓～', pinyin:'jiàozuò ~ de / suǒwèi ~'
+          },
+        ]
+      },
+      {
+        title: 'Counter Words (助数詞)',
+        note: 'Japanese counts using specific classifiers based on an object\'s shape or category. The same number sounds completely different with different counters. Learning these unlocks natural everyday conversation.',
+        phrases: [
+          {
+            jp:'〜枚 (mai) — flat things',
+            romaji:'~mai',
+            en:'Sheets / slices / tickets / flat objects',
+            tip:'Paper, tickets, shirts, pizza slices, photos. 一枚 (ichimai)、二枚 (nimai)、三枚 (sanmai)…',
+            examples:[
+              { jp:'コピーを三枚取ってください。', romaji:'Kopī wo sanmai totte kudasai.', en:'Please make three copies.' },
+              { jp:'切符を二枚買いました。', romaji:'Kippu wo nimai kaimashita.', en:'I bought two tickets.' },
+            ]
+          },
+          {
+            jp:'〜本 (hon) — long cylindrical things',
+            romaji:'~hon',
+            en:'Bottles / pens / roads / long objects',
+            tip:'Bottles, pens, pencils, trees, rivers, movies, shots (of spirits). 一本 (ippon)、二本 (nihon)、三本 (sanbon)…',
+            examples:[
+              { jp:'ビールを二本ください。', romaji:'Bīru wo nihon kudasai.', en:'Two beers, please.' },
+              { jp:'映画を何本見ましたか？', romaji:'Eiga wo nanbon mimashita ka?', en:'How many films did you watch?' },
+            ]
+          },
+          {
+            jp:'〜冊 (satsu) — bound volumes',
+            romaji:'~satsu',
+            en:'Books / notebooks / magazines',
+            tip:'Any bound publication. 一冊 (issatsu)、二冊 (nisatsu)、三冊 (sansatsu)…',
+            examples:[
+              { jp:'この本を三冊注文しました。', romaji:'Kono hon wo sansatsu chūmon shimashita.', en:'I ordered three copies of this book.' },
+            ]
+          },
+          {
+            jp:'〜台 (dai) — machines & vehicles',
+            romaji:'~dai',
+            en:'Cars / computers / appliances',
+            tip:'Cars, computers, TVs, printers, bicycles. 一台 (ichidai)、二台 (nidai)、三台 (sandai)…',
+            examples:[
+              { jp:'パソコンを一台買いたいんですが。', romaji:'Pasokon wo ichidai kaitai n desu ga.', en:'I\'d like to buy one computer.' },
+            ]
+          },
+          {
+            jp:'〜匹 / 〜頭 (hiki / tō) — animals',
+            romaji:'~hiki / ~tō',
+            en:'Small animals / large animals',
+            tip:'匹 = small/medium animals (cats, dogs, fish). 頭 = large animals (horses, cows, elephants). 羽 (wa) = birds.',
+            examples:[
+              { jp:'猫を二匹飼っています。', romaji:'Neko wo nihiki katte imasu.', en:'I have two cats.' },
+              { jp:'動物園に象が三頭います。', romaji:'Dōbutsuen ni zō ga santō imasu.', en:'There are three elephants at the zoo.' },
+            ]
+          },
+          {
+            jp:'〜人 (nin / ri) — people',
+            romaji:'~nin / ~ri',
+            en:'People counter',
+            tip:'一人 (hitori) and 二人 (futari) are irregular. From three: 三人 (sannin), 四人 (yonin), 何人 (nannin).',
+            examples:[
+              { jp:'二人でご予約ですか？', romaji:'Futari de go-yoyaku desu ka?', en:'A reservation for two?' },
+              { jp:'グループは何人ですか？', romaji:'Gurūpu wa nannin desu ka?', en:'How many people in your group?' },
+            ],
+            zh:'～人 / ～位', pinyin:'~ rén / ~ wèi'
+          },
+          {
+            jp:'〜杯 (hai) — cups & bowls',
+            romaji:'~hai',
+            en:'Cups / glasses / bowls of liquid',
+            tip:'一杯 (ippai)、二杯 (nihai)、三杯 (sanbai)… お腹いっぱい = stomach full (same いっぱい = full).',
+            examples:[
+              { jp:'コーヒーをもう一杯いただけますか？', romaji:'Kōhī wo mō ippai itadakemasu ka?', en:'Could I have one more cup of coffee?' },
+            ],
+            zh:'～杯', pinyin:'~ bēi'
+          },
+          {
+            jp:'〜回 (kai) — number of times',
+            romaji:'~kai',
+            en:'Times / occurrences',
+            tip:'一回 (ikkai) = once, 二回 (nikai) = twice, 三回 (sankai)… 何回も = many times.',
+            examples:[
+              { jp:'日本には三回来たことがあります。', romaji:'Nihon ni wa sankai kita koto ga arimasu.', en:'I\'ve been to Japan three times.' },
+            ],
+            zh:'～次 / ～回', pinyin:'~ cì / ~ huí'
+          },
+        ]
+      },
+      {
+        title: '〜てくる / 〜ていく — Direction & Change over Time',
+        note: 'Attach to て-form to express physical direction relative to the speaker, OR direction of change in time. くる = toward speaker/present moment. いく = away from speaker/into the future.',
+        phrases: [
+          {
+            jp:'〜てくる（こちらへ向かう）',
+            romaji:'~te kuru (toward here)',
+            en:'Come and do ~ / Do ~ (heading this way)',
+            tip:'Physical: do something while coming toward you. Temporal: a change has been developing UP TO NOW.',
+            examples:[
+              { jp:'雨が降ってきた。', romaji:'Ame ga futte kita.', en:'It\'s started raining. (rain arrived where I am)' },
+              { jp:'日本語が少しずつわかるようになってきた。', romaji:'Nihongo ga sukoshi zutsu wakaru yō ni natte kita.', en:'My Japanese has been gradually improving (up to now).' },
+            ]
+          },
+          {
+            jp:'〜ていく（そちらへ向かう）',
+            romaji:'~te iku (away from here)',
+            en:'Go and do ~ / Do ~ (heading away)',
+            tip:'Physical: do something while leaving. Temporal: a change will continue FROM NOW FORWARD into the future.',
+            examples:[
+              { jp:'これからもっと勉強していきます。', romaji:'Kore kara motto benkyō shite ikimasu.', en:'I\'ll continue studying more going forward.' },
+              { jp:'気温がどんどん上がっていく。', romaji:'Kion ga dondon agatte iku.', en:'The temperature keeps rising (into the future).' },
+            ]
+          },
+          {
+            jp:'〜てきた（変化の累積）',
+            romaji:'~te kita (accumulated change)',
+            en:'Has been ~ / Has come to ~',
+            tip:'Gradual change that has built up to the present. Often signals a speaker\'s realization about a developing situation.',
+            examples:[
+              { jp:'最近、この街は変わってきたね。', romaji:'Saikin, kono machi wa kawatte kita ne.', en:'This city has really been changing lately, hasn\'t it.' },
+              { jp:'だんだん寒くなってきた。', romaji:'Dandan samuku natte kita.', en:'It\'s been getting colder and colder.' },
+            ]
+          },
+        ]
+      },
     ]
   },
 
@@ -681,6 +841,35 @@ export const intermediateSections = [
           { jp:'それな', romaji:'Sore na', en:'Exactly / Same / That\'s it', tip:'Youth internet slang. Emphatic agreement. Short for それだよな.', zh:'就是！/ 对对对！', pinyin:'jiùshì! / duì duì duì!' },
           { jp:'〜しといて', romaji:'~shite oite', en:'Go ahead and do ~ / Do ~ in advance', tip:'〜ておく (do in advance) contracted to 〜とく/〜といて in casual speech.', examples:[{ jp:'資料、送っといて。', romaji:'Shiryō, okuttoi te.', en:'Go ahead and send the documents.' }] },
           { jp:'（笑）/ w / 草', romaji:'(wara) / w / kusa', en:'Lol / haha (text)', tip:'（笑）= older/formal. w = common texting. 草 = youth internet. 草 comes from 笑 (warau) → www → looks like grass (草).' },
+        ]
+      },
+      {
+        title: 'Describing Appearance & Style',
+        note: '見た目 (mitame) = appearance. Japanese has rich vocabulary for describing how things look and feel — far beyond simple adjectives.',
+        phrases: [
+          { jp:'〜っぽい', romaji:'~ppoi', en:'Looks like ~ / -ish / Kind of ~', tip:'Impressionistic similarity. 子供っぽい = childish. 外国人っぽい = looks foreign. Less certain than らしい.', examples:[{ jp:'この色、青っぽいね。', romaji:'Kono iro, aoppoi ne.', en:'This color is kind of bluish, isn\'t it.' }], zh:'有点像～的感觉', pinyin:'yǒudiǎn xiàng ~ de gǎnjué' },
+          { jp:'〜らしい（典型的）', romaji:'~rashii (typical of)', en:'True to ~ / Typical of ~ / As [X] should be', tip:'Something living up to its expected nature. 男らしい = manly. 日本らしい = quintessentially Japanese. A stronger sense of authenticity than っぽい.', examples:[{ jp:'これぞ日本らしい景色だ。', romaji:'Kore zo Nihon rashii keshiki da.', en:'This is quintessentially Japanese scenery.' }] },
+          { jp:'垢抜けている', romaji:'Aka-nukete iru', en:'Polished / Stylish / Has shed roughness', tip:'垢 = grime/roughness. 抜ける = to come out. Describes someone who has refined their style or matured out of awkwardness. A genuine compliment.', zh:'脱胎换骨 / 时髦', pinyin:'tuōtāi huàngǔ / shímáo' },
+          { jp:'地味 / 派手', romaji:'Jimi / hade', en:'Plain & understated / Flashy & showy', tip:'地味 = subdued, modest, low-key. 派手 = loud, extravagant, eye-catching. Used for clothing, events, or personality. Neither is purely negative.', examples:[{ jp:'あの服、ちょっと派手じゃない？', romaji:'Ano fuku, chotto hade ja nai?', en:'Isn\'t that outfit a bit flashy?' }], zh:'朴素 / 花哨', pinyin:'pǔsù / huāshao' },
+          { jp:'おしゃれ', romaji:'Oshare', en:'Stylish / Fashionable / Chic', tip:'Can describe a person, outfit, or place. おしゃれなカフェ = stylish café. Very common and genuine compliment.', zh:'时尚 / 有品味', pinyin:'shíshàng / yǒu pǐnwèi' },
+          { jp:'〜に見える', romaji:'~ni mieru', en:'Looks ~ / Appears to be ~', tip:'How something appears to the observer. 若く見える = looks young. 難しそうに見える = looks difficult.', examples:[{ jp:'あなた、若く見えますね。', romaji:'Anata, wakaku miemasu ne.', en:'You look young, don\'t you.' }], zh:'看起来～', pinyin:'kàn qǐlái ~' },
+          { jp:'雰囲気がある', romaji:'Fun\'iki ga aru', en:'Has atmosphere / Has a certain vibe', tip:'雰囲気 (fun\'iki) = atmosphere, ambience. High compliment for a place or person. このお店、雰囲気があるね = this place really has great ambiance.', examples:[{ jp:'このお店、すごく雰囲気があるね。', romaji:'Kono omise, sugoku fun\'iki ga aru ne.', en:'This place really has great ambiance.' }], zh:'有氛围感', pinyin:'yǒu fēnwéi gǎn' },
+          { jp:'清潔感がある', romaji:'Seiketsu-kan ga aru', en:'Has a clean, put-together look', tip:'清潔 = clean. 感 = feeling/sense. Means someone looks neat, fresh, and well-groomed. Classic compliment in Japanese social contexts.', zh:'看起来干净整洁', pinyin:'kàn qǐlái gānjìng zhěngjié' },
+        ]
+      },
+      {
+        title: 'Describing Food & Taste',
+        note: 'Japan has some of the richest food vocabulary in the world. These words go far beyond おいしい, and will make you sound genuinely fluent when discussing food.',
+        phrases: [
+          { jp:'コクがある', romaji:'Koku ga aru', en:'Rich and deep in flavor / Has depth', tip:'コク = depth of flavor, richness, body. The layered quality of a good soup or sauce. No single English word captures it.', zh:'醇厚 / 有层次感', pinyin:'chúnhòu / yǒu céngcì gǎn' },
+          { jp:'出汁が効いている', romaji:'Dashi ga kiite iru', en:'The dashi broth shines through', tip:'出汁 (dashi) = foundational Japanese stock (kelp/bonito). 効いている = working/present. High praise for Japanese cooking.', zh:'汤底很到位', pinyin:'tāng dǐ hěn dào wèi' },
+          { jp:'さっぱりしている', romaji:'Sappari shite iru', en:'Light / Refreshing / Clean-tasting', tip:'The opposite of heavy or greasy. Positive quality for summer food, salads, or light sauces. さっぱりした味 = clean, refreshing taste.', zh:'清爽 / 不腻', pinyin:'qīngshuǎng / bù nì' },
+          { jp:'こってり', romaji:'Kotteri', en:'Rich / Heavy / Thick and indulgent', tip:'The opposite of さっぱり. こってりラーメン = rich, heavy ramen. Used positively for indulgent, satisfying food.', zh:'浓郁 / 厚重', pinyin:'nóngyù / hòuzhòng' },
+          { jp:'プリプリ / もちもち', romaji:'Puri-puri / Mochi-mochi', en:'Bouncy & springy / Chewy & elastic', tip:'Texture onomatopoeia unique to Japanese food culture. プリプリ = firm springy bounce (shrimp). もちもち = soft elastic chew (fresh mochi, handmade udon).', examples:[{ jp:'このエビ、プリプリで最高！', romaji:'Kono ebi, puripuri de saikō!', en:'These shrimp are so springy — perfect!' }] },
+          { jp:'とろける', romaji:'Torokeru', en:'Melts in your mouth', tip:'とろける = to melt. とろけるような食感 = melt-in-your-mouth texture. Said of fatty tuna, wagyu beef, or rich desserts.', examples:[{ jp:'口の中でとろける！', romaji:'Kuchi no naka de torokeru!', en:'It melts in your mouth!' }], zh:'入口即化', pinyin:'rù kǒu jí huà' },
+          { jp:'本格的', romaji:'Honkakuteki', en:'Authentic / The real deal', tip:'本格 = genuine/authentic. 本格的なイタリア料理 = authentic Italian food. High compliment for any cuisine.', zh:'正宗 / 地道', pinyin:'zhèngzōng / dìdao' },
+          { jp:'隠し味', romaji:'Kakushi aji', en:'Secret / hidden flavor', tip:'隠し = hidden. 味 = taste. A subtle ingredient added to deepen a dish that you can\'t quite identify. Deeply Japanese cooking concept.', zh:'秘制调料 / 隐藏风味', pinyin:'mìzhì tiáoliào' },
+          { jp:'量が多い / 少ない', romaji:'Ryō ga ōi / sukunai', en:'Large / small portion', tip:'量 (ryō) = quantity, amount. 量が多い = generous portion. 量が少ない = small portion. Essential for describing value.', zh:'份量多 / 少', pinyin:'fèn liàng duō / shǎo' },
         ]
       },
     ]
@@ -825,6 +1014,21 @@ export const intermediateSections = [
           { jp:'間 (ま)',             romaji:'Ma',                  en:'The space between / Negative space / Pause', tip:'A uniquely Japanese aesthetic concept: the meaningful silence, the pause in music, the empty space in design that creates meaning. Silence in Japanese conversation is not awkward — it\'s 間.' },
         ]
       },
+      {
+        title: 'Anime, Gaming & Pop Culture',
+        note: 'Whether or not you\'re an anime fan, this vocabulary saturates modern Japanese. You\'ll hear these terms from colleagues and friends in everyday conversation.',
+        phrases: [
+          { jp:'ツンデレ', romaji:'Tsundere', en:'Initially cold/hostile, then secretly warm', tip:'ツン = standoffish (ツンツン). デレ = lovesick (デレデレ). Now widely used for anyone who acts tough but is secretly sweet. Originally an anime character archetype.', zh:'傲娇', pinyin:'àojiāo', zhNote:'傲娇 (àojiāo) in Chinese is the direct equivalent — borrowed from Japanese anime culture.' },
+          { jp:'ガチ / ガチ勢', romaji:'Gachi / gachi-zei', en:'Serious / Hardcore / No-nonsense', tip:'ガチ = genuine/serious. ガチ勢 = hardcore players or fans who put in serious effort. ガチで = for real, seriously. Used in everyday speech beyond gaming.', examples:[{ jp:'彼はガチのゲーマーだよ。', romaji:'Kare wa gachi no gēmā da yo.', en:'He\'s a hardcore gamer, for real.' }] },
+          { jp:'聖地巡礼', romaji:'Seichi junrei', en:'Anime/media pilgrimage to real-world locations', tip:'聖地 = holy land. 巡礼 = pilgrimage. Visiting real places featured in anime, films, or games. A massive tourism phenomenon driving Japan\'s domestic travel industry.', examples:[{ jp:'あのアニメの聖地巡礼に行きたい。', romaji:'Ano anime no seichi junrei ni ikitai.', en:'I want to do a pilgrimage to that anime\'s real locations.' }] },
+          { jp:'フラグが立つ', romaji:'Furagu ga tatsu', en:'A death flag is raised / That\'s asking for trouble', tip:'From game "flags" that trigger events. フラグが立った = you\'ve triggered a bad outcome. Said jokingly when something sounds like a bad omen.', examples:[{ jp:'「絶対大丈夫」なんて言ったら死亡フラグだよ。', romaji:'「Zettai daijōbu」nante ittara shibō furagu da yo.', en:'Saying "I\'ll definitely be fine" is a death flag, you know.' }] },
+          { jp:'廃人', romaji:'Haijin', en:'No-lifer / Someone wasted by obsessive gaming', tip:'廃 = ruins. 人 = person. Someone who has wasted away through overindulgence in games or internet. Usually self-deprecating.', zh:'废人', pinyin:'fèirén' },
+          { jp:'尊い', romaji:'Tōtoi', en:'So precious / Pure / Overwhelmingly wholesome', tip:'Fan culture term for when something is so wholesome or pure that it emotionally overwhelms you. 尊すぎて死ぬ = so precious I could die. Often about fictional characters.', zh:'太可爱了（令人窒息地）', pinyin:'tài kěài le' },
+          { jp:'沼にはまる', romaji:'Numa ni hamaru', en:'Fall into a swamp / Get completely hooked', tip:'沼 (numa) = swamp/bog. はまる = get absorbed in. 沼 = an obsession/fandom you\'re stuck in. Kpop沼、ゲーム沼、日本語沼…', examples:[{ jp:'日本語の沼にはまりました。', romaji:'Nihongo no numa ni hamarimashita.', en:'I\'ve fallen deep into the Japanese language rabbit hole.' }] },
+          { jp:'こだわり', romaji:'Kodawari', en:'Particular commitment / Uncompromising attention to detail', tip:'Dedication to a specific craft or quality. 職人のこだわり = craftsman\'s unwavering standards. Can mean stubbornness or passion depending on context.', zh:'讲究 / 执着', pinyin:'jiǎngjiū / zhízhuó' },
+          { jp:'量産型', romaji:'Ryōsan-gata', en:'Mass-produced type / Cookie-cutter (person or style)', tip:'量産 = mass production. 量産型女子 = girls with a uniform popular aesthetic (matching fashion, etc.). Not always negative — sometimes affectionate.', zh:'流水线产品（某种千篇一律的风格）', pinyin:'liúshuǐ xiàn chǎnpǐn' },
+        ]
+      },
     ]
   },
 
@@ -901,6 +1105,32 @@ export const intermediateSections = [
           { jp:'気にしないで', romaji:'Ki ni shinai de', en:'Don\'t let it bother you / Don\'t worry about it', tip:'Comforting a friend. 気にする = to mind/worry about.', zh:'别放在心上', pinyin:'bié fàng zài xīn shàng' },
         ]
       },
+      {
+        title: 'Gift-Giving Culture (お土産・贈り物)',
+        note: 'お土産 (omiyage) is a cornerstone of Japanese social life. Returning from any trip — even a short one — obligates you to bring edible souvenirs for colleagues and friends. The ritual of giving and receiving matters as much as the gift.',
+        phrases: [
+          { jp:'つまらないものですが', romaji:'Tsumaranai mono desu ga', en:'It\'s nothing special, but… (ritual phrase when giving a gift)', tip:'Do NOT take literally — this is the standard humble opener for presenting a gift. Never praise your own gift. Modesty is built into the act of giving.', zh:'一点小意思，不成敬意', pinyin:'yīdiǎn xiǎo yìsi', zhNote:'一点小意思 in Chinese serves the same ritual self-deprecation function. Very direct parallel.' },
+          { jp:'お土産です、どうぞ', romaji:'Omiyage desu, dōzo', en:'This is a souvenir for you, please have it', tip:'お土産 = souvenir/gift from travel. 〜です、どうぞ = here you go. The standard presentation phrase.', zh:'这是给你的特产，请收下', pinyin:'zhè shì gěi nǐ de tèchǎn, qǐng shōuxià' },
+          { jp:'ご遠慮なく', romaji:'Go-enryo naku', en:'Please don\'t hold back / Go right ahead', tip:'Permission to accept or eat without hesitation. 遠慮 = restraint. ご遠慮ください = please refrain (the OPPOSITE meaning!) — context is everything.', zh:'请别客气', pinyin:'qǐng bié kèqi' },
+          { jp:'気を使わないでください', romaji:'Ki wo tsukawanai de kudasai', en:'You didn\'t have to / Please don\'t trouble yourself', tip:'Said when receiving an unexpected gift. Acknowledges the giver\'s effort and thoughtfulness.', zh:'你太客气了', pinyin:'nǐ tài kèqi le' },
+          { jp:'開けてもいいですか？', romaji:'Akete mo ii desu ka?', en:'May I open it?', tip:'In Japan, gifts are often NOT opened in front of the giver — to avoid revealing any disappointment. Asking before opening shows awareness of this norm.', zh:'可以打开吗？', pinyin:'kěyǐ dǎkāi ma?' },
+          { jp:'お返しです', romaji:'Okaeshi desu', en:'This is a return gift', tip:'お返し = gift in return. Strong cultural obligation to reciprocate with a gift of roughly half the value. 半返し (han-gaeshi) = half-return.', zh:'这是回礼', pinyin:'zhè shì huí lǐ' },
+          { jp:'〜に行ってきました', romaji:'~ni itte kimashita', en:'I went to ~ and came back (omiyage context)', tip:'The standard way to announce you\'ve returned from a trip, naturally leading into distributing omiyage.', examples:[{ jp:'京都に行ってきました、よろしければどうぞ。', romaji:'Kyōto ni itte kimashita, yoroshikereba dōzo.', en:'I went to Kyoto — please have some if you\'d like.' }] },
+        ]
+      },
+      {
+        title: 'Seasonal Culture & Events (年中行事)',
+        note: '四季 (shiki) — the four seasons — are central to Japanese identity, language, and art. Each season brings distinct events, food, and social rituals. Seasonal awareness is woven into everyday conversation.',
+        phrases: [
+          { jp:'〜の季節になりましたね', romaji:'~no kisetsu ni narimashita ne', en:'The season of ~ has arrived', tip:'Opening a seasonal observation in conversation. 桜の季節 = cherry blossom season. 梅雨の季節 = rainy season.', zh:'～的季节到了呢', pinyin:'~ de jìjié dào le ne' },
+          { jp:'お花見に行きませんか？', romaji:'Ohanami ni ikimasen ka?', en:'Shall we go cherry blossom viewing?', tip:'花見 = flower viewing party under cherry blossoms. Late March–early April. Groups spread blue tarps in parks, eat and drink under the blossoms. One of Japan\'s most beloved social events.', zh:'要不要去赏樱花？', pinyin:'yào bù yào qù shǎng yīnghuā?' },
+          { jp:'お正月はどう過ごしましたか？', romaji:'Oshōgatsu wa dō sugoshimashita ka?', en:'How did you spend New Year\'s?', tip:'Standard question back at work on January 4th. Expect answers about 初詣 (shrine visit), おせち (special holiday food), お年玉 (money envelopes for children).', zh:'新年怎么过的？', pinyin:'xīnnián zěnme guò de?' },
+          { jp:'暑中お見舞い申し上げます', romaji:'Shochū omimai mōshiagemasu', en:'I hope you\'re keeping well in the summer heat', tip:'Formal summer greeting (July–early August). Sent as a postcard (暑中見舞い). 残暑お見舞い申し上げます = late-summer version (after Aug 8th, 立秋).', zh:'夏日问候（正式书信用语）', pinyin:'xiàrì wènhòu' },
+          { jp:'紅葉が綺麗ですね', romaji:'Kōyō ga kirei desu ne', en:'The autumn leaves are beautiful, aren\'t they', tip:'紅葉 (kōyō) = autumn foliage. Japan\'s second most celebrated outdoor season after sakura. 紅葉狩り (kōyōgari) = autumn leaf viewing excursion.', zh:'红叶真美啊', pinyin:'hóngyè zhēn měi a' },
+          { jp:'大掃除の季節ですね', romaji:'Ōsōji no kisetsu desu ne', en:'It\'s the season for the big year-end clean', tip:'大掃除 = year-end deep clean. Traditional December ritual where every corner of the house is cleaned before the New Year to start fresh.', zh:'到了大扫除的季节了', pinyin:'dào le dàsǎochú de jìjié le' },
+          { jp:'年賀状を書きましたか？', romaji:'Nengajō wo kakimashita ka?', en:'Have you written your New Year\'s cards?', tip:'年賀状 = New Year\'s postcard. Japanese people traditionally send hundreds to maintain relationships. Sent before Dec 31st, delivered Jan 1st. Declining with age but still expected.', zh:'写年贺卡了吗？', pinyin:'xiě nián hèkǎ le ma?' },
+        ]
+      },
     ]
   },
 
@@ -969,6 +1199,158 @@ export const intermediateSections = [
           { jp:'ちょっと相談してもいいですか？', romaji:'Chotto sōdan shite mo ii desu ka?', en:'Do you have a moment? / Can I discuss something with you?', tip:'Non-threatening way to raise an issue with a colleague.', zh:'方便聊一下吗？', pinyin:'fāngbiàn liáo yīxià ma?' },
           { jp:'お先に失礼します', romaji:'Osaki ni shitsurei shimasu', en:'Excuse me for leaving before you', tip:'What you say when leaving the office before colleagues. Ubiquitous in Japanese workplaces.', zh:'我先走了', pinyin:'wǒ xiān zǒu le' },
           { jp:'仕事終わった！飲みいかない？', romaji:'Shigoto owatta! Nomi ikanai?', en:'Work\'s done! Wanna grab a drink?', tip:'The after-work invitation. Casual and very natural.', zh:'下班了！去喝一杯？', pinyin:'xiàbān le! qù hē yī bēi?' },
+        ]
+      },
+      {
+        title: 'Job Interviews (面接・就活)',
+        note: '就活 (shūkatsu) = job-hunting activities. 面接 (mensetsu) = interview. Japanese interviews are highly structured. Expect questions about 志望動機 (motivation to apply) and 自己PR (self-promotion pitch). Memorize these structures.',
+        phrases: [
+          { jp:'御社を志望した理由は〜です', romaji:'Onsha wo shibō shita riyū wa ~ desu', en:'The reason I applied to your company is ~', tip:'御社 = your company (spoken). 貴社 = your company (written). Never mix them up. 志望動機 = motivation for applying — the first interview question.', examples:[{ jp:'御社の革新的な社風に魅力を感じ、志望しました。', romaji:'Onsha no kakushinteki na shafū ni miryoku wo kanji, shibō shimashita.', en:'I was drawn to your company\'s innovative culture.' }], zh:'我应聘贵公司的原因是～', pinyin:'wǒ yìngpìn guì gōngsī de yuányīn shì ~' },
+          { jp:'自己PRをお願いします', romaji:'Jiko-PR wo onegai shimasu', en:'Please tell us about yourself / Please give your self-promotion pitch', tip:'自己PR (jiko piāru) = self-promotion. 1-2 minutes on your core strength + concrete evidence + how it benefits this company. Structure everything this way.', zh:'请做一下自我介绍和自我推销', pinyin:'qǐng zuò yīxià zìwǒ jièshào' },
+          { jp:'私の強みは〜です', romaji:'Watashi no tsuyomi wa ~ desu', en:'My strength is ~', tip:'強み (tsuyomi) = strong point. Always follow with 具体的なエピソード (a concrete episode). Never state a strength without evidence.', examples:[{ jp:'私の強みはコミュニケーション能力です。', romaji:'Watashi no tsuyomi wa komyunikēshon nōryoku desu.', en:'My strength is my communication ability.' }] },
+          { jp:'〜という経験があります', romaji:'~to iu keiken ga arimasu', en:'I have experience in ~ / I\'ve experienced ~', tip:'Backing up your self-PR with concrete evidence. 経験 (keiken) = experience. Essential structure.', examples:[{ jp:'インターンシップで顧客対応の経験があります。', romaji:'Intānshippu de kokyaku taiō no keiken ga arimasu.', en:'I have experience handling customers from my internship.' }] },
+          { jp:'入社した際には〜していきたいと思います', romaji:'Nyūsha shita sai ni wa ~ shite ikitai to omoimasu', en:'If I join, I hope to ~ going forward', tip:'Future-oriented answer showing you\'ve thought about your contribution. 〜していく shows gradual, ongoing effort.', zh:'如果入职，我希望能持续地～', pinyin:'rúguǒ rùzhí, wǒ xīwàng néng chíxù de ~' },
+          { jp:'御社の〜という点に魅力を感じました', romaji:'Onsha no ~ to iu ten ni miryoku wo kanjimashita', en:'I was attracted to your company\'s ~ aspect', tip:'Shows you\'ve researched the company. Fill in with something specific: 社風 (company culture), 事業内容 (business content), 成長性 (growth potential).', zh:'我对贵公司的～方面感到很有吸引力', pinyin:'wǒ duì guì gōngsī de ~ fāngmiàn gǎndào hěn yǒu xīyǐnlì' },
+          { jp:'本日はお時間をいただきありがとうございました', romaji:'Honjitsu wa ojikan wo itadaki arigatō gozaimashita', en:'Thank you for your time today', tip:'How you close an interview with maximum formality. Always bow as you say this. お時間をいただく = receiving the honor of your time.', zh:'感谢您今天抽出时间', pinyin:'gǎnxiè nín jīntiān chōuchū shíjiān' },
+        ]
+      },
+      {
+        title: 'Client & Customer Relations',
+        note: 'Japanese business culture draws a sharp line between inside (内, uchi) and outside (外, soto). Your language shifts dramatically depending on whether you\'re talking to internal colleagues or external clients.',
+        phrases: [
+          { jp:'いつもお世話になっております', romaji:'Itsumo osewa ni natte orimasu', en:'Thank you for your continued support (business relationship opener)', tip:'Opens every business call, email, and visit. Untranslatable — acknowledges the ongoing relationship. Say it even if you\'ve never met. Skipping it sounds cold.', zh:'一直承蒙关照', pinyin:'yīzhí chéngméng guānzhào' },
+          { jp:'〜の件でご連絡いたしました', romaji:'~no ken de go-renraku itashimashita', en:'I\'m contacting you regarding ~', tip:'Standard email/call opener after the greeting line. 件 (ken) = matter, subject. いたしました = humble past of しました.', zh:'我联系您是关于～事宜', pinyin:'wǒ liánxì nín shì guānyú ~ shìyí' },
+          { jp:'ご確認のほどよろしくお願いいたします', romaji:'Go-kakunin no hodo yoroshiku onegai itashimasu', en:'I kindly ask for your review', tip:'The golden review-request phrase in Japanese business writing. Used constantly at the end of emails with attached documents. ほど softens the request elegantly.', zh:'恳请您确认', pinyin:'kěnqǐng nín quèrèn' },
+          { jp:'取り急ぎご連絡まで', romaji:'Toriisogigorenraku made', en:'This is a quick message to let you know', tip:'Email/message closing phrase. Literally "rushing to notify you". Used when sending urgent or preliminary information before a full response.', zh:'仅作紧急通知', pinyin:'jǐn zuò jǐnjí tōngzhī' },
+          { jp:'ご不明な点がございましたら、お気軽にお申し付けください', romaji:'Go-fumei na ten ga gozaimashitara, okigaru ni omōshitsuke kudasai', en:'If you have any questions, please don\'t hesitate to ask', tip:'Classic email/letter closing line. ございましたら = ultra-polite conditional of あったら.', zh:'如有任何疑问，请随时告知', pinyin:'rú yǒu rènhé yíwèn, qǐng suíshí gàozhī' },
+          { jp:'引き続きよろしくお願いいたします', romaji:'Hikitsuzuki yoroshiku onegai itashimasu', en:'I look forward to your continued cooperation', tip:'Closes emails to clients or long-term partners. 引き続き = continuing, going forward. The relationship-maintenance closing phrase.', zh:'请继续多多关照', pinyin:'qǐng jìxù duōduō guānzhào' },
+        ]
+      },
+    ]
+  },
+
+  {
+    id: 'int-daily',
+    title: 'Daily Life & Errands',
+    icon: '🏪',
+    groups: [
+      {
+        title: 'At the Convenience Store (コンビニ)',
+        note: 'コンビニ (konbini) = convenience store. Japan\'s 7-Eleven, Lawson, and FamilyMart are extraordinarily useful — you can pay bills, print documents, buy tickets, and eat well. Knowing these phrases unlocks daily life.',
+        phrases: [
+          { jp:'温めますか？', romaji:'Atatamemasu ka?', en:'Would you like it warmed up?', tip:'What the cashier asks when you buy hot food (弁当, onigiri etc.). Yes = はい、お願いします. No = 大丈夫です。', zh:'需要加热吗？', pinyin:'xūyào jiārè ma?' },
+          { jp:'袋はご利用ですか？', romaji:'Fukuro wa go-riyō desu ka?', en:'Would you like a bag?', tip:'Since Japan\'s plastic bag charge (2020), this is asked at every checkout. 袋はいりません = I don\'t need a bag.', zh:'需要袋子吗？', pinyin:'xūyào dàizi ma?' },
+          { jp:'ポイントカードはお持ちですか？', romaji:'Pointo kādo wa omochi desu ka?', en:'Do you have a points card?', tip:'Loyalty card question at every checkout. ありません = I don\'t have one. 大丈夫です = I\'m fine (no thank you).', zh:'有积分卡吗？', pinyin:'yǒu jīfēn kǎ ma?' },
+          { jp:'お箸はおつけしますか？', romaji:'Ohashi wa otsuke shimasu ka?', en:'Would you like chopsticks?', tip:'Asked with bento or rice balls. お箸 = chopsticks. おつけする = humble form of つける (to attach/add).', zh:'需要筷子吗？', pinyin:'xūyào kuàizi ma?' },
+          { jp:'〜をコピーしたいのですが', romaji:'~wo kopī shitai no desu ga', en:'I\'d like to make a copy of ~', tip:'Convenience store printers/copiers are full-service. Ask staff for help. コンビニのコピー機 = kombini copy machine.', zh:'我想复印～', pinyin:'wǒ xiǎng fùyìn ~' },
+          { jp:'〜の支払いはできますか？', romaji:'~no shiharai wa dekimasu ka?', en:'Can I pay my ~ bill here?', tip:'You can pay utility bills, credit card bills, and online orders at the counter. Just show the barcode.', zh:'可以在这里交～的费吗？', pinyin:'kěyǐ zài zhèlǐ jiāo ~ de fèi ma?' },
+          { jp:'ATMはどこですか？', romaji:'ATM wa doko desu ka?', en:'Where is the ATM?', tip:'Every konbini has one. Japanese ATMs often accept international cards — combini ATMs (especially 7-Bank) are most foreigner-friendly.', zh:'ATM在哪里？', pinyin:'ATM zài nǎlǐ?' },
+        ]
+      },
+      {
+        title: 'At the Pharmacy (薬局)',
+        note: '薬局 (yakkyoku) = pharmacy/drugstore. Chains like Matsumoto Kiyoshi and Tsuruha are everywhere. Many OTC medicines have no English label — knowing these questions will help.',
+        phrases: [
+          { jp:'〜に効く薬はありますか？', romaji:'~ni kiku kusuri wa arimasu ka?', en:'Do you have medicine for ~?', tip:'効く = to be effective. Fill in with: 頭痛 (headache), 風邪 (cold), 花粉症 (hay fever), 胃痛 (stomachache).', examples:[{ jp:'頭痛に効く薬はありますか？', romaji:'Zutsū ni kiku kusuri wa arimasu ka?', en:'Do you have medicine for a headache?' }], zh:'有治～的药吗？', pinyin:'yǒu zhì ~ de yào ma?' },
+          { jp:'一日何回飲みますか？', romaji:'Ichinichi nankai nomimasu ka?', en:'How many times a day should I take this?', tip:'Important question before taking any medicine. The answer will be 1回、2回、or 3回, usually with meals (食後 = after meals).', zh:'一天服几次？', pinyin:'yītiān fú jǐ cì?' },
+          { jp:'アレルギーがあります', romaji:'Arerugī ga arimasu', en:'I have an allergy', tip:'Follow with: 〜アレルギーがあります (I\'m allergic to ~). 卵アレルギー = egg allergy. 花粉症 (kafunshō) = hay fever/pollen allergy.', zh:'我有过敏', pinyin:'wǒ yǒu guòmǐn' },
+          { jp:'処方箋が必要ですか？', romaji:'Shohōsen ga hitsuyō desu ka?', en:'Do I need a prescription?', tip:'処方箋 = prescription. Many medicines that require a prescription in other countries are OTC in Japan.', zh:'需要处方吗？', pinyin:'xūyào chǔfāng ma?' },
+          { jp:'副作用はありますか？', romaji:'Fukusayō wa arimasu ka?', en:'Are there any side effects?', tip:'副作用 = side effects. Good to ask, though the pharmacist\'s answer may require follow-up questions.', zh:'有副作用吗？', pinyin:'yǒu fùzuòyòng ma?' },
+          { jp:'日焼け止めはどこですか？', romaji:'Hiyakedome wa doko desu ka?', en:'Where is the sunscreen?', tip:'日焼け止め = sunscreen. Japanese sunscreens are some of the best in the world. SPF50+ PA++++ is standard.', zh:'防晒霜在哪里？', pinyin:'fángshaì shuāng zài nǎlǐ?' },
+        ]
+      },
+      {
+        title: 'At the Post Office (郵便局)',
+        note: '郵便局 (yūbinkyoku) = post office. Japan Post is efficient and its post offices are everywhere. You can also do basic banking at Japan Post.',
+        phrases: [
+          { jp:'これをアメリカに送りたいのですが', romaji:'Kore wo Amerika ni okuritai no desu ga', en:'I\'d like to send this to America', tip:'Replace アメリカ with any country. The clerk will ask if you want surface or air mail.', zh:'我想把这个寄到美国', pinyin:'wǒ xiǎng bǎ zhège jì dào Měiguó' },
+          { jp:'船便と航空便、どちらがいいですか？', romaji:'Funabin to kōkūbin, dochira ga ii desu ka?', en:'Which is better, sea mail or airmail?', tip:'船便 (funabin) = sea mail (cheaper, slower). 航空便 (kōkūbin) = airmail (faster, more expensive). EMS = Express Mail Service (fastest).', zh:'普通海运和航空哪个好？', pinyin:'pǔtōng hǎiyùn hé hángkōng nǎge hǎo?' },
+          { jp:'保険をかけますか？', romaji:'Hoken wo kakemasu ka?', en:'Would you like insurance on it?', tip:'Optional for valuable items. The clerk will ask if the contents are fragile or valuable.', zh:'需要投保吗？', pinyin:'xūyào tóubǎo ma?' },
+          { jp:'追跡番号はありますか？', romaji:'Tsuiseki bangō wa arimasu ka?', en:'Is there a tracking number?', tip:'追跡 = tracking. EMS and registered mail come with tracking. 荷物を追跡する = to track a package.', zh:'有追踪号码吗？', pinyin:'yǒu zhuīzōng hàomǎ ma?' },
+          { jp:'不在票が入っていました', romaji:'Fuzaihyō ga haitte imashita', en:'There was a "missed delivery" slip', tip:'不在票 = the red/pink card left when you miss a delivery. Has a number to call or a URL to reschedule. You can also redelivery at a konbini.', zh:'收到了没人在家的通知单', pinyin:'shōudào le méi rén zàijiā de tōngzhīdān' },
+        ]
+      },
+      {
+        title: 'Banking & Money (銀行・お金)',
+        phrases: [
+          { jp:'口座を開きたいのですが', romaji:'Kōza wo hirakitai no desu ga', en:'I\'d like to open an account', tip:'口座 = bank account. Japan Post Bank (ゆうちょ銀行) and 7-Bank are most accessible for foreign residents. Bring your 在留カード and passport.', zh:'我想开户', pinyin:'wǒ xiǎng kāihù' },
+          { jp:'ATMの使い方がわかりません', romaji:'ATM no tsukaikata ga wakarimasen', en:'I don\'t know how to use the ATM', tip:'ATMs in Japan often have an English mode (英語) — tap the flag icon. 7-Bank and Japan Post ATMs are most foreigner-friendly.', zh:'我不会用这台ATM', pinyin:'wǒ bù huì yòng zhè tái ATM' },
+          { jp:'両替をお願いしたいのですが', romaji:'Ryōgae wo onegai shitai no desu ga', en:'I\'d like to exchange currency', tip:'両替 = currency exchange. Banks, post offices, and airport exchange counters. Some dept stores (デパート) also exchange. Hotel rates are worse.', zh:'我想换外币', pinyin:'wǒ xiǎng huàn wàibì' },
+          { jp:'〜円に両替してください', romaji:'~en ni ryōgae shite kudasai', en:'Please exchange to ~ yen', tip:'Specify the amount. You\'ll need your passport for foreign currency exchange.', examples:[{ jp:'一万円に両替してください。', romaji:'Ichiman-en ni ryōgae shite kudasai.', en:'Please exchange to 10,000 yen.' }], zh:'请换成～日元', pinyin:'qǐng huànchéng ~ rìyuán' },
+          { jp:'振込手数料はかかりますか？', romaji:'Furikomi tesūryō wa kakarimasu ka?', en:'Is there a transfer fee?', tip:'振込 (furikomi) = bank transfer. 手数料 (tesūryō) = handling fee. Japanese bank transfers can have fees, especially between different banks.', zh:'转账有手续费吗？', pinyin:'zhuǎnzhàng yǒu shǒuxùfèi ma?' },
+          { jp:'お釣りが違います', romaji:'Otsuri ga chigaimasu', en:'My change is incorrect', tip:'お釣り = change (from a cash transaction). 違います = is wrong/different. Polite but direct.', zh:'零钱找错了', pinyin:'língqián zhǎo cuò le' },
+        ]
+      },
+      {
+        title: 'Apartment & Neighborhood',
+        note: '賃貸 (chintai) = rental. 不動産 (fudōsan) = real estate. Finding and living in a Japanese apartment involves specific vocabulary and customs — especially the upfront costs and neighbor relations.',
+        phrases: [
+          { jp:'家賃はいくらですか？', romaji:'Yachin wa ikura desu ka?', en:'How much is the rent?', tip:'家賃 (yachin) = rent. 管理費 (kanrihi) = maintenance fee (often on top of rent). 共益費 (kyōekihi) = common area fee.', zh:'房租多少钱？', pinyin:'fángzū duōshǎo qián?' },
+          { jp:'敷金・礼金はかかりますか？', romaji:'Shikikin / reikin wa kakarimasu ka?', en:'Are there deposit / key money fees?', tip:'敷金 (shikikin) = security deposit (refunded). 礼金 (reikin) = key money (NOT refunded — traditional gift to landlord). Usually 1-2 months each.', zh:'需要押金和礼金吗？', pinyin:'xūyào yājīn hé lǐjīn ma?' },
+          { jp:'ゴミの出し方を教えてください', romaji:'Gomi no dashikata wo oshiete kudasai', en:'Please tell me how to put out the trash', tip:'Japanese garbage separation is strict: 燃えるゴミ (burnable), 燃えないゴミ (non-burnable), 資源ゴミ (recyclables). Days vary by neighborhood.', zh:'请告诉我怎么扔垃圾', pinyin:'qǐng gàosù wǒ zěnme rēng lājī' },
+          { jp:'隣に引っ越してきました。よろしくお願いします', romaji:'Tonari ni hikkoshite kimashita. Yoroshiku onegai shimasu.', en:'I\'ve moved in next door. Please take care of me.', tip:'The standard greeting when moving in. Bring a small gift (タオルや洗剤など — towels or detergent are safe). Visit each neighbor on your floor.', zh:'我刚搬来隔壁，请多关照', pinyin:'wǒ gāng bān lái gébì, qǐng duō guānzhào' },
+          { jp:'騒音が気になっています', romaji:'Sōon ga ki ni natte imasu', en:'I\'ve been bothered by the noise', tip:'騒音 (sōon) = noise/sound disturbance. 気になる = to be bothered/concerned about. Polite indirect way to raise a noise issue with a neighbor.', zh:'噪音让我很困扰', pinyin:'zàoyīn ràng wǒ hěn kùnrǎo' },
+          { jp:'水道が壊れています', romaji:'Suidō ga kowarete imasu', en:'The plumbing is broken', tip:'水道 = water supply. 壊れる = to break down. Report to your 管理会社 (management company) or 大家さん (landlord). Keep their contact in your phone.', zh:'水管坏了', pinyin:'shuǐguǎn huài le' },
+        ]
+      },
+    ]
+  },
+
+  {
+    id: 'int-nature',
+    title: 'Nature, Seasons & Outdoors',
+    icon: '🌿',
+    groups: [
+      {
+        title: 'Appreciating Nature (自然)',
+        note: '自然 (shizen) = nature. Japanese has deeply specific vocabulary for natural beauty — much of it untranslatable. These words are used in everyday conversation, not just poetry.',
+        phrases: [
+          { jp:'景色がいいですね', romaji:'Keshiki ga ii desu ne', en:'The scenery is beautiful, isn\'t it', tip:'景色 (keshiki) = scenery/view. 絶景 (zekkei) = breathtaking/extraordinary view. Often said at viewpoints, hilltops, or scenic train windows.', zh:'风景真好啊', pinyin:'fēngjǐng zhēn hǎo a' },
+          { jp:'木漏れ日がきれい', romaji:'Komorebi ga kirei', en:'The light filtering through the leaves is beautiful', tip:'木漏れ日 = sunlight dappling through leaves — a uniquely Japanese word with no direct English equivalent. Perfectly captures a specific experience.', zh:'（无对应词）阳光透过树叶的样子', pinyin:'(no direct equivalent)' },
+          { jp:'山が雪をかぶっている', romaji:'Yama ga yuki wo kabutte iru', en:'The mountains are capped with snow', tip:'雪をかぶる = to be covered with snow (literally "wearing snow"). A natural description of a snowcapped peak.', zh:'山上覆盖着雪', pinyin:'shān shàng fùgài zhe xuě' },
+          { jp:'空気が澄んでいる', romaji:'Kūki ga sunde iru', en:'The air is crisp and clear', tip:'澄む (sumu) = to become clear/pure. Said of mountain air, autumn air, or post-rain freshness.', zh:'空气很清新', pinyin:'kōngqì hěn qīngxīn' },
+          { jp:'夕焼けがきれいだ', romaji:'Yūyake ga kirei da', en:'The sunset is beautiful', tip:'夕焼け (yūyake) = evening glow/sunset. 朝焼け (asayake) = dawn/sunrise glow. 焼ける = to burn/glow.', zh:'晚霞真美', pinyin:'wǎnxiá zhēn měi' },
+          { jp:'もうすぐ梅雨ですね', romaji:'Mōsugu tsuyu desu ne', en:'The rainy season is almost here', tip:'梅雨 (tsuyu) = Japan\'s rainy season (mid-June–mid-July). 梅雨明け (tsuyu-ake) = end of the rainy season. A major seasonal marker in everyday conversation.', zh:'快到梅雨季了', pinyin:'kuài dào méiyǔ jì le' },
+          { jp:'台風が来ているみたいです', romaji:'Taifū ga kite iru mitai desu', en:'Looks like a typhoon is coming', tip:'台風 (taifū) = typhoon. Japan gets direct hits from typhoons June–October. 暴風警報 = storm warning. 外出自粛 = stay-indoors advisory.', zh:'好像台风要来了', pinyin:'hǎoxiàng táifēng yào lái le' },
+          { jp:'花粉症がひどい', romaji:'Kafunshō ga hidoi', en:'My hay fever is really bad', tip:'花粉症 (kafunshō) = pollen allergy/hay fever. Affects ~40% of Japanese people (mainly cedar pollen in spring). One of the top health topics in spring conversation.', zh:'花粉症很严重', pinyin:'huāfěn zhèng hěn yánzhòng' },
+        ]
+      },
+      {
+        title: 'Onsen Culture (温泉)',
+        note: '温泉 (onsen) = hot spring bath. One of Japan\'s most beloved cultural experiences. There are strict rules. Tattoos are prohibited in most facilities. Soap before entering, no swimwear, total silence and relaxation.',
+        phrases: [
+          { jp:'露天風呂はありますか？', romaji:'Roten-buro wa arimasu ka?', en:'Is there an outdoor bath?', tip:'露天風呂 (roten-buro) = outdoor open-air bath. 内湯 (uchiyu) = indoor bath. The outdoor one is usually the premium experience.', zh:'有露天温泉吗？', pinyin:'yǒu lùtiān wēnquán ma?' },
+          { jp:'入り方を教えていただけますか？', romaji:'Irikata wo oshiete itadakemasu ka?', en:'Could you tell me the proper way to enter?', tip:'Polite way to ask onsen etiquette. The basics: shower thoroughly first, no towel in the water, tie back long hair, no diving or loud noise.', zh:'能告诉我怎么进去吗？', pinyin:'néng gàosù wǒ zěnme jìnqù ma?' },
+          { jp:'タトゥーがあるのですが…', romaji:'Tatū ga aru no desu ga…', en:'I have a tattoo… (disclosure)', tip:'Most public onsen prohibit tattoos. Some ryokan have private baths (貸切風呂) that allow them. Trailing off politely invites the staff to explain the policy.', zh:'我有纹身……', pinyin:'wǒ yǒu wénshēn...' },
+          { jp:'かけ湯をしてください', romaji:'Kakeyu wo shite kudasai', en:'Please pour water over yourself first', tip:'かけ湯 = preliminary rinse before entering the communal bath. An essential etiquette step. Signage will often remind guests.', zh:'请先用水冲一下身体', pinyin:'qǐng xiān yòng shuǐ chōng yīxià shēntǐ' },
+          { jp:'泉質は何ですか？', romaji:'Sensha wa nan desu ka?', en:'What kind of spring water is it?', tip:'泉質 (sensha) = type of hot spring. Types include: 硫黄 (sulfur), 炭酸 (carbonated), 塩化物 (chloride), 放射能泉 (radon — common in Japan, therapeutic). Knowing the type lets you understand the health benefits.', zh:'是什么泉质？', pinyin:'shì shénme quán zhì?' },
+          { jp:'サウナがありますか？', romaji:'Sauna ga arimasu ka?', en:'Is there a sauna?', tip:'Sauna culture (サウナ) has exploded in Japan. ととのう (totonou) = the meditative state of equilibrium after alternating between sauna and cold plunge. A key sauna vocabulary word.', zh:'有桑拿吗？', pinyin:'yǒu sāngná ma?' },
+          { jp:'のぼせてしまいました', romaji:'Nobosete shimaimashita', en:'I got dizzy from the heat', tip:'のぼせる = to feel faint/get too hot in a bath. Very common. Remedy: sit on the edge of the bath, drink water, rest.', zh:'我被热晕了', pinyin:'wǒ bèi rè yūn le' },
+        ]
+      },
+      {
+        title: 'Hiking & Outdoors (山・ハイキング)',
+        note: '登山 (tozan) = mountain climbing. ハイキング = hiking. Japan has outstanding hiking — from well-maintained trails with mountain huts (山小屋) to serious alpine routes. These phrases prepare you for trails and mountain huts.',
+        phrases: [
+          { jp:'この登山道は初心者向けですか？', romaji:'Kono tozandō wa shoshinsha-muke desu ka?', en:'Is this hiking trail suitable for beginners?', tip:'登山道 = mountain trail. 初心者向け = for beginners. Also ask: 何時間かかりますか？= how long does it take?', zh:'这条登山路适合新手吗？', pinyin:'zhè tiáo dēngshān lù shìhé xīnshǒu ma?' },
+          { jp:'山頂まであとどのくらいですか？', romaji:'Sanchō made ato dono kurai desu ka?', en:'How much further to the summit?', tip:'山頂 (sanchō) = mountain summit/peak. あとどのくらい = how much more. An essential question mid-climb.', zh:'离山顶还有多远？', pinyin:'lí shāndǐng hái yǒu duōyuǎn?' },
+          { jp:'今日の天気予報はどうですか？', romaji:'Kyō no tenki yohō wa dō desu ka?', en:'What\'s the weather forecast for today?', tip:'天気予報 (tenki yohō) = weather forecast. Check before any mountain hike in Japan — weather changes fast in the mountains. 山の天気 = mountain weather.', zh:'今天的天气预报怎么样？', pinyin:'jīntiān de tiānqì yùbào zěnmeyàng?' },
+          { jp:'道に迷ってしまいました', romaji:'Michi ni mayotte shimaimashita', en:'I got lost on the trail', tip:'道に迷う = to get lost. しまいました adds the nuance of "unfortunately ended up". Tell your location using trail markers (標識) numbers if possible.', zh:'我迷路了', pinyin:'wǒ mílù le' },
+          { jp:'足がつってしまいました', romaji:'Ashi ga tsurtte shimaimashita', en:'I got a leg cramp', tip:'足がつる = to get a cramp in the leg. A common mountain ailment. Sit, stretch, and hydrate. 休憩 (kyūkei) = rest break.', zh:'我腿抽筋了', pinyin:'wǒ tuǐ chōujīn le' },
+          { jp:'山小屋は予約が必要ですか？', romaji:'Yamagoya wa yoyaku ga hitsuyō desu ka?', en:'Do mountain huts need a reservation?', tip:'山小屋 (yamagoya) = mountain hut. On popular routes (Fuji, etc.) reservation is mandatory in season. Includes dinner and breakfast.', zh:'山屋需要预约吗？', pinyin:'shān wū xūyào yùyuē ma?' },
+          { jp:'熊に注意', romaji:'Kuma ni chūi', en:'Beware of bears', tip:'熊 (kuma) = bear. Japanese black bears inhabit mountains and forests. Bells (熊鈴, kumazuzu) and making noise on the trail are the standard precautions.', zh:'注意熊出没', pinyin:'zhùyì xióng chūmò' },
+        ]
+      },
+      {
+        title: 'Festival Culture (お祭り)',
+        note: '祭り (matsuri) = festival. Japan\'s summer festivals are among the most colorful in the world. 浴衣 (yukata), 屋台 (food stalls), 花火 (fireworks), 盆踊り (Bon dance) — each summer brings dozens of local matsuri.',
+        phrases: [
+          { jp:'近くに祭りがありますか？', romaji:'Chikaku ni matsuri ga arimasu ka?', en:'Is there a festival nearby?', tip:'Ask at your hotel or check local tourism boards. Summer is packed with matsuri. Many are free and family-friendly.', zh:'附近有祭典吗？', pinyin:'fùjìn yǒu jìdiǎn ma?' },
+          { jp:'浴衣を着ていきませんか？', romaji:'Yukata wo kite ikimasen ka?', en:'Shall we wear yukata and go?', tip:'浴衣 (yukata) = casual summer kimono worn to festivals. Many hotels and rental shops offer yukata for hire. You\'ll fit in perfectly.', zh:'要不要穿浴衣去？', pinyin:'yào bù yào chuān yùyī qù?' },
+          { jp:'屋台で食べよう！', romaji:'Yatai de tabeyō!', en:'Let\'s eat at the food stalls!', tip:'屋台 (yatai) = festival food stall. Classics: 焼きそば (yakisoba), 唐揚げ (karaage), たこ焼き (takoyaki), かき氷 (shaved ice), りんご飴 (candy apple).', zh:'去小摊子吃东西吧！', pinyin:'qù xiǎo tān zi chī dōngxi ba!' },
+          { jp:'花火が上がった！', romaji:'Hanabi ga agatta!', en:'The fireworks have started!', tip:'花火大会 (hanabi taikai) = fireworks display. Held on summer evenings. Major ones (隅田川花火大会 etc.) draw hundreds of thousands of people.', zh:'烟花放起来了！', pinyin:'yānhuā fàng qǐlái le!' },
+          { jp:'一緒に盆踊りを踊りませんか？', romaji:'Issho ni bon-odori wo odorimasen ka?', en:'Shall we dance the Bon Odori together?', tip:'盆踊り (bon-odori) = traditional dance performed at summer Obon festivals. Everyone joins in — foreigners are enthusiastically welcomed.', zh:'一起跳盂兰盆舞吗？', pinyin:'yīqǐ tiào yúlánpén wǔ ma?' },
+          { jp:'金魚すくいやってみない？', romaji:'Kingyo-sukui yatte minaī?', en:'Want to try the goldfish scooping game?', tip:'金魚すくい = festival game where you scoop goldfish with a fragile paper net. 輪投げ (ring toss), スーパーボールすくい (rubber ball scoop) are other classics.', zh:'要不要玩捞金鱼？', pinyin:'yào bù yào wán lāo jīnyú?' },
         ]
       },
     ]

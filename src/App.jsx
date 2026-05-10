@@ -38,6 +38,8 @@ const VIEWS = [
   { id:'int-slang',   label:'Slang & Culture',       icon:'😎', group: 'intermediate' },
   { id:'int-social',  label:'Friends & Social Life',  icon:'👥', group: 'intermediate' },
   { id:'int-work',    label:'Work & Professional',   icon:'💼', group: 'intermediate' },
+  { id:'int-daily',   label:'Daily Life & Errands',  icon:'🏪', group: 'intermediate' },
+  { id:'int-nature',  label:'Nature & Outdoors',     icon:'🌿', group: 'intermediate' },
   { id:'sep-tools', sep: true, label: 'TOOLS', groupKey: 'tools' },
   { id:'dialogues',   label:'Conversations',         icon:'💭', group: 'tools' },
   { id:'numbers',     label:'Number Calculator',     icon:'🔢', group: 'tools' },
