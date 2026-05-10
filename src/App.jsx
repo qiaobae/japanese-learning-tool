@@ -59,24 +59,28 @@ function VoiceNotice() {
     return () => window.speechSynthesis.removeEventListener('voiceschanged', check);
   }, []);
   if (!missing) return null;
+  const isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
   return (
     <div className="voice-notice">
-      ⚠️ No Japanese voice found. Install a Japanese TTS voice in your OS settings to enable audio playback.
+      {isMobile
+        ? '⚠️ No Japanese voice detected. On iOS: Settings → Accessibility → Spoken Content → Voices → Japanese. On Android: Settings → General Management → Language → Text-to-speech.'
+        : '⚠️ No Japanese voice found. Install a Japanese TTS voice in your OS settings to enable audio playback.'}
     </div>
   );
 }
 
 export default function App() {
-  const [view, setView]     = useState('quickstart');
-  const [search, setSearch] = useState('');
-  const [slow, setSlow]     = useState(false);
+  const [view, setView]       = useState('quickstart');
+  const [search, setSearch]   = useState('');
+  const [slow, setSlow]       = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const speed = slow ? 0.5 : 0.85;
 
   const favsCtx = useFavourites();
   const activeSection = sections.find(s => s.id === view)
     || intermediateSections.find(s => s.id === view);
 
-  function goTo(v) { setView(v); setSearch(''); }
+  function goTo(v) { setView(v); setSearch(''); setMenuOpen(false); }
 
   function renderContent() {
     if (search.trim().length > 1) return <SearchResults query={search.trim()} />;
@@ -93,7 +97,6 @@ export default function App() {
     return null;
   }
 
-  // Build sidebar views, injecting favourites count
   const sidebarViews = VIEWS.map(v => {
     if (v.id === 'favourites' && favsCtx.count > 0) {
       return { ...v, label: `Favourites (${favsCtx.count})` };
@@ -105,9 +108,12 @@ export default function App() {
     <SpeedContext.Provider value={speed}>
       <FavsContext.Provider value={favsCtx}>
         <div className="app-layout">
-          <Sidebar views={sidebarViews} current={view} onSelect={goTo} />
+          <Sidebar views={sidebarViews} current={view} onSelect={goTo} isOpen={menuOpen} onClose={() => setMenuOpen(false)} />
           <div className="main-area">
             <div className="topbar">
+              <button className="hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+                <span /><span /><span />
+              </button>
               <div className="search-wrap">
                 <span className="search-icon">🔍</span>
                 <input
@@ -124,7 +130,8 @@ export default function App() {
                   onClick={() => setSlow(s => !s)}
                   title="Toggle slow pronunciation"
                 >
-                  {slow ? '🐢 Slow' : '🔊 Normal'}
+                  {slow ? '🐢' : '🔊'}
+                  <span className="speed-label">{slow ? ' Slow' : ' Normal'}</span>
                 </button>
               </div>
             </div>
