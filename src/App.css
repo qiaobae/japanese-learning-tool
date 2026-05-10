@@ -972,6 +972,7 @@ mark { background: #fef08a; border-radius: 2px; }
   .app-layout {
     grid-template-columns: 1fr;
     height: 100dvh;
+    overflow: visible;
   }
 
   /* Sidebar → slide-in drawer */
