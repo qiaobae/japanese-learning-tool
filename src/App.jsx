@@ -40,6 +40,8 @@ const VIEWS = [
   { id:'int-work',    label:'Work & Professional',   icon:'💼', group: 'intermediate' },
   { id:'int-daily',   label:'Daily Life & Errands',  icon:'🏪', group: 'intermediate' },
   { id:'int-nature',  label:'Nature & Outdoors',     icon:'🌿', group: 'intermediate' },
+  { id:'int-health',  label:'Health & Body',         icon:'🏥', group: 'intermediate' },
+  { id:'int-arts',    label:'Entertainment & Culture', icon:'🎭', group: 'intermediate' },
   { id:'sep-tools', sep: true, label: 'TOOLS', groupKey: 'tools' },
   { id:'dialogues',   label:'Conversations',         icon:'💭', group: 'tools' },
   { id:'numbers',     label:'Number Calculator',     icon:'🔢', group: 'tools' },

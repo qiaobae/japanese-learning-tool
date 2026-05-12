@@ -785,7 +785,7 @@ export const intermediateSections = [
           { jp:'〜が心配です',              romaji:'~ga shinpai desu', en:'I\'m worried about ~',                 tip:'心配 (shinpai) = worry. 心配しないで = don\'t worry.', zh:'担心～', pinyin:'dānxīn ~' },
           { jp:'〜に感動しました',           romaji:'~ni kandō shimashita', en:'I was deeply moved by ~',          tip:'感動 (kandō) = deep emotional impression. Stronger than just "impressed".', zh:'被～感动了', pinyin:'bèi ~ gǎndòng le' },
           { jp:'〜に驚きました',             romaji:'~ni odorokimashita', en:'I was surprised by ~',              zh:'对～感到惊讶', pinyin:'duì ~ gǎndào jīngyà' },
-          { jp:'もったいない',               romaji:'Mottainai',         en:'What a waste / Too good to waste',    tip:'Untranslatable cultural concept. Used for wasted food, unused potential, missed opportunities. UNESCO recognized it as a model concept.', zh:'可惜 / 浪费', pinyin:'kěxí / làngfèi', zhNote:'可惜 (pity/shame) is the closest Chinese equivalent, though もったいない has deeper ecological/moral resonance.' },
+          { jp:'もったいない',               romaji:'Mottainai',         en:'What a waste / Too good to waste',    tip:'Untranslatable cultural concept. Used for wasted food, unused potential, missed opportunities. UNESCO recognized it as a model concept.', zh:'可惜 / 浪费', pinyin:'kěxī / làngfèi', zhNote:'可惜 (pity/shame) is the closest Chinese equivalent, though もったいない has deeper ecological/moral resonance.' },
           { jp:'仕方がない / 仕方ない',      romaji:'Shikata ga nai',    en:'It can\'t be helped / What can you do', tip:'Resigned acceptance. The Japanese cultural response to unchangeable situations. Also しょうがない (shōganai).', zh:'没办法', pinyin:'méi bànfǎ', zhNote:'没办法 in Chinese carries the same resigned acceptance.' },
           { jp:'〜が悔しいです',             romaji:'~ga kuyashii desu', en:'I\'m frustrated / That\'s mortifying', tip:'Kuyashii = the feeling of vexation at failure or missed opportunity. Often said when you ALMOST succeeded.' },
           { jp:'〜が羨ましいです',           romaji:'~ga urayamashii desu', en:'I\'m envious of ~ / Lucky you ~', tip:'Not negative envy — more like admiring jealousy. Said genuinely.', zh:'我很羡慕～', pinyin:'wǒ hěn xiànmù ~' },
@@ -820,7 +820,7 @@ export const intermediateSections = [
           { jp:'まじで？ / マジ？', romaji:'Maji de? / Maji?', en:'Seriously? / For real?', tip:'Youth casual. まじかー = man, seriously... まじで言ってる = are you serious?', zh:'真的吗？', pinyin:'zhēn de ma?' },
           { jp:'すごい！', romaji:'Sugoi!', en:'Wow! / Amazing! / Great!', tip:'The all-purpose positive exclamation. すごいね = that\'s amazing, huh. すごく = very (adverb).', zh:'好厉害！/ 哇！', pinyin:'hǎo lìhai!' },
           { jp:'やった！', romaji:'Yatta!', en:'Yes! / I did it! / Hooray!', tip:'Celebration of success.', zh:'太好了！/ 成功了！', pinyin:'tài hǎo le!' },
-          { jp:'残念！', romaji:'Zannen!', en:'What a shame! / Too bad!', tip:'Express disappointment. 残念ながら = unfortunately (formal).', zh:'太可惜了！', pinyin:'tài kěxí le!' },
+          { jp:'残念！', romaji:'Zannen!', en:'What a shame! / Too bad!', tip:'Express disappointment. 残念ながら = unfortunately (formal).', zh:'太可惜了！', pinyin:'tài kěxī le!' },
           { jp:'ほんとに？', romaji:'Honto ni?', en:'Really? / Truly?', tip:'Seeking confirmation. ほんとに！ as exclamation = honestly/truly!', zh:'真的吗？', pinyin:'zhēn de ma?' },
           { jp:'ああ、そういうことか', romaji:'Aa, sō iu koto ka', en:'Ah, I see — that\'s what it means', tip:'The moment of understanding clicking. Satisfying to say.' },
           { jp:'助かります！', romaji:'Tasukarimasu!', en:'That\'s a big help / You saved me', tip:'Used when someone helps you. 助かった！= you saved me! (casual past)', zh:'帮了大忙了', pinyin:'bāng le dà máng le' },
@@ -953,7 +953,7 @@ export const intermediateSections = [
           { jp:'ワンチャン',         romaji:'Wan chan',      en:'Maybe / One chance / Possibly',           tip:'From English "one chance". ワンチャンあるかも = maybe there\'s a chance.' },
           { jp:'めちゃ / めっちゃ',  romaji:'Mecha / Meccha', en:'Very / Super / Incredibly',              tip:'Originally Kansai dialect, now nationwide. めっちゃ好き = like it super much. Used like すごく but more casual and youthful.' },
           { jp:'神',                romaji:'Kami',          en:'God-tier / Absolutely amazing',           tip:'Used as adjective: 神対応 (kami-taiō) = God-level service. 神ってる = being godly. Ultra compliment.', examples:[{ jp:'あの演奏、神だった！', romaji:'Ano ensō, kami datta!', en:'That performance was god-tier!' }] },
-          { jp:'推し',              romaji:'Oshi',          en:'Your favorite (idol/character/person you support)', tip:'Originally idol culture, now universally used. 推しメン = favorite member. 推す (osu) = to support/advocate for.', zh:'偶像 / 最爱', pinyin:'ǒuxiàng / zuì ài' },
+          { jp:'推し',              romaji:'Oshi',          en:'Your favorite (idol/character/person you support)', tip:'Originally idol culture, now universally used. 推しメン = favorite member. 推す (osu) = to support/advocate for.', zh:'我推 / 力推的对象', pinyin:'wǒ tuī / lì tuī de duìxiàng', zhNote:'Chinese fan culture directly borrowed 推 (tuī) from Japanese — fans say 我推 (wǒ tuī) meaning "my oshi". 推坑 = to drag someone into a fandom.' },
           { jp:'エモい',            romaji:'Emoi',          en:'Emotional / Nostalgic / Has that feeling', tip:'From English "emo". Used for anything that evokes deep feelings — nostalgia, aesthetic beauty, bittersweet feelings.' },
           { jp:'リア充',            romaji:'Riajū',          en:'Someone with a fulfilling real life',      tip:'リアル (real) + 充実 (fulfilling). Used by internet/otaku culture to describe people who are socially successful, have relationships, etc. Sometimes said with envy, sometimes self-deprecation.' },
           { jp:'ぎり',              romaji:'Giri',          en:'Barely / Just barely',                    tip:'ぎりセーフ = barely safe (just made it). ぎりアウト = just barely out (failed).', examples:[{ jp:'ぎり間に合った！', romaji:'Giri maniatta!', en:'I barely made it in time!' }] },
@@ -989,7 +989,7 @@ export const intermediateSections = [
           { jp:'ぺらぺら',    romaji:'Pera-pera',   en:'Fluent (in a language)',                    tip:'日本語がぺらぺら = fluent in Japanese. The highest compliment for language learners.', examples:[{ jp:'日本語がぺらぺらですね！', romaji:'Nihongo ga perapera desu ne!', en:'Your Japanese is so fluent!' }] },
           { jp:'ぐるぐる',    romaji:'Guru-guru',   en:'Spinning / Round and round / Dizzy',        tip:'ぐるぐる回る = spinning around. 頭がぐるぐる = head is spinning (confused/dizzy).' },
           { jp:'ぐっすり',    romaji:'Gussuri',     en:'Sleeping soundly (deeply)',                 tip:'ぐっすり眠る = sleep soundly. Said when someone is in deep, peaceful sleep.' },
-          { jp:'バタバタ',    romaji:'Bata-bata',   en:'Busy / Rushing about / Chaotic',           tip:'Sound of hurried activity. バタバタしている = running around crazily busy.', zh:'忙乱', pinyin:'mánɡluàn' },
+          { jp:'バタバタ',    romaji:'Bata-bata',   en:'Busy / Rushing about / Chaotic',           tip:'Sound of hurried activity. バタバタしている = running around crazily busy.', zh:'忙乱 / 手忙脚乱', pinyin:'mángluàn / shǒu máng jiǎo luàn' },
           { jp:'ニコニコ',    romaji:'Niko-niko',   en:'Smiling / Happily grinning',               tip:'ニコニコしている = has a big happy smile on their face. Also Niconico (video site) = smiling face.', zh:'笑嘻嘻', pinyin:'xiào xīxī' },
           { jp:'ぼんやり',    romaji:'Bonyari',     en:'Vaguely / Absentmindedly / In a daze',     tip:'ぼんやりしている = spaced out, not paying attention.', examples:[{ jp:'今日はずっとぼんやりしていました。', romaji:'Kyō wa zutto bonyari shite imashita.', en:'I was spacing out all day today.' }] },
           { jp:'しっかり',    romaji:'Shikkari',    en:'Firmly / Properly / Well',                 tip:'しっかりしてください = pull yourself together / get it together.' },
@@ -1009,7 +1009,7 @@ export const intermediateSections = [
           { jp:'甘える (あまえる)',    romaji:'Amaeru',              en:'To depend on someone\'s goodwill / To act spoiled in an endearing way', tip:'To presume on another\'s benevolence and indulge in their kindness. Children do it with parents. Adults do it with close friends, mentors, or partners. Not negative — it\'s a valued intimacy.', zh:'撒娇', pinyin:'sājiāo', zhNote:'撒娇 (sājiāo) in Chinese captures the childlike/playful aspect. But 甘える is broader and used between adults more comfortably.' },
           { jp:'本音と建前 (ほんねとたてまえ)',romaji:'Honne to tatemae', en:'True feelings vs. public stance',      tip:'本音 = real intentions. 建前 = socially expected front. Japanese communication often operates on this two-layer system. What someone says (建前) and what they mean (本音) can differ significantly. Understanding this is key to navigating Japan.', zh:'表面话与真心话', pinyin:'biǎomiàn huà yǔ zhēnxīn huà' },
           { jp:'頑張る (がんばる)',    romaji:'Ganbaru',             en:'To persevere / Do one\'s utmost',          tip:'Deeper than "try hard". It\'s a total commitment to effort despite difficulty. 頑張って！(ganbatte!) = do your best! / you can do it! — the most common Japanese encouragement.', zh:'加油 / 努力', pinyin:'jiāyóu / nǔlì', zhNote:'加油 (jiāyóu) is the Chinese equivalent cheering phrase. 頑張る captures more of a stoic endurance beyond just "effort".' },
-          { jp:'お疲れ様 (おつかれさま)',romaji:'Otsukare sama',      en:'Well done / Thank you for your effort',   tip:'Said to colleagues/peers after completing work. 乙 (otsu) is the casual text version. You\'ll hear this constantly in any Japanese workplace. Also used to close phone calls/emails internally.', zh:'辛苦了', pinyin:'xīnku le', zhNote:'辛苦了 in Chinese carries the same "you\'ve worked hard, good job" sentiment.' },
+          { jp:'お疲れ様 (おつかれさま)',romaji:'Otsukare sama',      en:'Well done / Thank you for your effort',   tip:'Said to colleagues/peers after completing work. 乙 (otsu) is the casual text version. You\'ll hear this constantly in any Japanese workplace. Also used to close phone calls/emails internally.', zh:'辛苦了', pinyin:'xīnkǔ le', zhNote:'辛苦了 in Chinese carries the same "you\'ve worked hard, good job" sentiment.' },
           { jp:'お邪魔します (おじゃまします)',romaji:'Ojama shimasu',  en:'Excuse me for intruding (entering someone\'s space)', tip:'Said when entering someone\'s home, office, or workspace. 邪魔 = interruption/obstacle. You\'re acknowledging that your presence is an imposition, even as a welcome guest.' },
           { jp:'間 (ま)',             romaji:'Ma',                  en:'The space between / Negative space / Pause', tip:'A uniquely Japanese aesthetic concept: the meaningful silence, the pause in music, the empty space in design that creates meaning. Silence in Japanese conversation is not awkward — it\'s 間.' },
         ]
@@ -1023,7 +1023,7 @@ export const intermediateSections = [
           { jp:'聖地巡礼', romaji:'Seichi junrei', en:'Anime/media pilgrimage to real-world locations', tip:'聖地 = holy land. 巡礼 = pilgrimage. Visiting real places featured in anime, films, or games. A massive tourism phenomenon driving Japan\'s domestic travel industry.', examples:[{ jp:'あのアニメの聖地巡礼に行きたい。', romaji:'Ano anime no seichi junrei ni ikitai.', en:'I want to do a pilgrimage to that anime\'s real locations.' }] },
           { jp:'フラグが立つ', romaji:'Furagu ga tatsu', en:'A death flag is raised / That\'s asking for trouble', tip:'From game "flags" that trigger events. フラグが立った = you\'ve triggered a bad outcome. Said jokingly when something sounds like a bad omen.', examples:[{ jp:'「絶対大丈夫」なんて言ったら死亡フラグだよ。', romaji:'「Zettai daijōbu」nante ittara shibō furagu da yo.', en:'Saying "I\'ll definitely be fine" is a death flag, you know.' }] },
           { jp:'廃人', romaji:'Haijin', en:'No-lifer / Someone wasted by obsessive gaming', tip:'廃 = ruins. 人 = person. Someone who has wasted away through overindulgence in games or internet. Usually self-deprecating.', zh:'废人', pinyin:'fèirén' },
-          { jp:'尊い', romaji:'Tōtoi', en:'So precious / Pure / Overwhelmingly wholesome', tip:'Fan culture term for when something is so wholesome or pure that it emotionally overwhelms you. 尊すぎて死ぬ = so precious I could die. Often about fictional characters.', zh:'太可爱了（令人窒息地）', pinyin:'tài kěài le' },
+          { jp:'尊い', romaji:'Tōtoi', en:'So precious / Pure / Overwhelmingly wholesome', tip:'Fan culture term for when something is so wholesome or pure that it emotionally overwhelms you. 尊すぎて死ぬ = so precious I could die. Often about fictional characters.', zh:'令人窒息的美好 / 神圣', pinyin:'lìng rén zhìxī de měihǎo', zhNote:'可爱 (cute) doesn\'t quite cover it — 尊い is the overwhelming feeling of purity. Chinese fan culture sometimes uses 尊 directly as a borrowed term.' },
           { jp:'沼にはまる', romaji:'Numa ni hamaru', en:'Fall into a swamp / Get completely hooked', tip:'沼 (numa) = swamp/bog. はまる = get absorbed in. 沼 = an obsession/fandom you\'re stuck in. Kpop沼、ゲーム沼、日本語沼…', examples:[{ jp:'日本語の沼にはまりました。', romaji:'Nihongo no numa ni hamarimashita.', en:'I\'ve fallen deep into the Japanese language rabbit hole.' }] },
           { jp:'こだわり', romaji:'Kodawari', en:'Particular commitment / Uncompromising attention to detail', tip:'Dedication to a specific craft or quality. 職人のこだわり = craftsman\'s unwavering standards. Can mean stubbornness or passion depending on context.', zh:'讲究 / 执着', pinyin:'jiǎngjiū / zhízhuó' },
           { jp:'量産型', romaji:'Ryōsan-gata', en:'Mass-produced type / Cookie-cutter (person or style)', tip:'量産 = mass production. 量産型女子 = girls with a uniform popular aesthetic (matching fashion, etc.). Not always negative — sometimes affectionate.', zh:'流水线产品（某种千篇一律的风格）', pinyin:'liúshuǐ xiàn chǎnpǐn' },
@@ -1046,7 +1046,7 @@ export const intermediateSections = [
           { jp:'何時でも大丈夫', romaji:'Nanji demo daijōbu', en:'Anytime works for me', tip:'Flexible availability — being low-maintenance.', zh:'几点都行', pinyin:'jǐ diǎn dōu xíng' },
           { jp:'また今度ね', romaji:'Mata kondo ne', en:'Maybe next time / Let\'s do it another time', tip:'Soft decline or genuine postponement — context tells you which.', zh:'下次吧', pinyin:'xià cì ba' },
           { jp:'絶対行く！', romaji:'Zettai iku!', en:'I\'m definitely going! / Count me in!', tip:'絶対 = absolutely/definitely. Enthusiastic commitment.', zh:'我一定去！', pinyin:'wǒ yīdìng qù!' },
-          { jp:'ドタキャンしてごめん', romaji:'Dotakyan shite gomen', en:'Sorry for the last-minute cancel', tip:'ドタキャン = last-minute cancellation (土壇場キャンセル). Specific and very commonly used term.', zh:'临时放鸽子，对不起', pinyin:'línshí fàng gēzi, duìbuqǐ' },
+          { jp:'ドタキャンしてごめん', romaji:'Dotakyan shite gomen', en:'Sorry for the last-minute cancel', tip:'ドタキャン = last-minute cancellation (土壇場キャンセル). Specific and very commonly used term.', zh:'临时取消 / 临时爽约', pinyin:'línshí qǔxiāo / línshí shuǎngyuē', zhNote:'放鸽子 specifically means a no-show; ドタキャン includes last-minute text cancellations. 临时取消 is the broader match.' },
           { jp:'サシ飲みしよう', romaji:'Sashi nomi shiyō', en:'Let\'s grab drinks just the two of us', tip:'サシ = one-on-one. 飲み = drinking session. Very natural casual invitation.', zh:'两个人去喝一杯吧', pinyin:'liǎng gè rén qù hē yī bēi ba' },
           { jp:'おごるよ', romaji:'Ogoru yo', en:'My treat / I\'ll pay', tip:'おごる = to treat someone to food/drinks. ごちそうするよ is more formal.', zh:'我请客', pinyin:'wǒ qǐngkè' },
           { jp:'割り勘でいいよ', romaji:'Warikan de ii yo', en:'Let\'s split it', tip:'割り勘 = splitting the bill. Completely normal among Japanese friends.', zh:'AA制吧', pinyin:'AA zhì ba' },
@@ -1256,7 +1256,7 @@ export const intermediateSections = [
           { jp:'アレルギーがあります', romaji:'Arerugī ga arimasu', en:'I have an allergy', tip:'Follow with: 〜アレルギーがあります (I\'m allergic to ~). 卵アレルギー = egg allergy. 花粉症 (kafunshō) = hay fever/pollen allergy.', zh:'我有过敏', pinyin:'wǒ yǒu guòmǐn' },
           { jp:'処方箋が必要ですか？', romaji:'Shohōsen ga hitsuyō desu ka?', en:'Do I need a prescription?', tip:'処方箋 = prescription. Many medicines that require a prescription in other countries are OTC in Japan.', zh:'需要处方吗？', pinyin:'xūyào chǔfāng ma?' },
           { jp:'副作用はありますか？', romaji:'Fukusayō wa arimasu ka?', en:'Are there any side effects?', tip:'副作用 = side effects. Good to ask, though the pharmacist\'s answer may require follow-up questions.', zh:'有副作用吗？', pinyin:'yǒu fùzuòyòng ma?' },
-          { jp:'日焼け止めはどこですか？', romaji:'Hiyakedome wa doko desu ka?', en:'Where is the sunscreen?', tip:'日焼け止め = sunscreen. Japanese sunscreens are some of the best in the world. SPF50+ PA++++ is standard.', zh:'防晒霜在哪里？', pinyin:'fángshaì shuāng zài nǎlǐ?' },
+          { jp:'日焼け止めはどこですか？', romaji:'Hiyakedome wa doko desu ka?', en:'Where is the sunscreen?', tip:'日焼け止め = sunscreen. Japanese sunscreens are some of the best in the world. SPF50+ PA++++ is standard.', zh:'防晒霜在哪里？', pinyin:'fángshài shuāng zài nǎlǐ?' },
         ]
       },
       {
@@ -1351,6 +1351,129 @@ export const intermediateSections = [
           { jp:'花火が上がった！', romaji:'Hanabi ga agatta!', en:'The fireworks have started!', tip:'花火大会 (hanabi taikai) = fireworks display. Held on summer evenings. Major ones (隅田川花火大会 etc.) draw hundreds of thousands of people.', zh:'烟花放起来了！', pinyin:'yānhuā fàng qǐlái le!' },
           { jp:'一緒に盆踊りを踊りませんか？', romaji:'Issho ni bon-odori wo odorimasen ka?', en:'Shall we dance the Bon Odori together?', tip:'盆踊り (bon-odori) = traditional dance performed at summer Obon festivals. Everyone joins in — foreigners are enthusiastically welcomed.', zh:'一起跳盂兰盆舞吗？', pinyin:'yīqǐ tiào yúlánpén wǔ ma?' },
           { jp:'金魚すくいやってみない？', romaji:'Kingyo-sukui yatte minaī?', en:'Want to try the goldfish scooping game?', tip:'金魚すくい = festival game where you scoop goldfish with a fragile paper net. 輪投げ (ring toss), スーパーボールすくい (rubber ball scoop) are other classics.', zh:'要不要玩捞金鱼？', pinyin:'yào bù yào wán lāo jīnyú?' },
+        ]
+      },
+    ]
+  },
+
+  {
+    id: 'int-health',
+    title: 'Health & Body',
+    icon: '🏥',
+    groups: [
+      {
+        title: 'Describing Symptoms (症状を伝える)',
+        note: 'Describing symptoms precisely gets you better care. Japanese uses location + sensation pattern: 〜が〜する/します. Learn these before you need them.',
+        phrases: [
+          { jp:'頭が痛いです', romaji:'Atama ga itai desu', en:'I have a headache', tip:'頭 = head. 痛い = hurts. 頭痛 (zutsū) = headache (noun). ズキズキ = throbbing; ガンガン = pounding — add these for precision.', examples:[{ jp:'朝から頭がガンガンします。', romaji:'Asa kara atama ga gangan shimasu.', en:'My head has been pounding since morning.' }], zh:'头痛', pinyin:'tóutòng' },
+          { jp:'熱があります', romaji:'Netsu ga arimasu', en:'I have a fever', tip:'熱 (netsu) = fever/heat. 体温を測りましたか？= have you taken your temperature? 38度の熱 = 38°C fever.', zh:'发烧了', pinyin:'fāshāo le' },
+          { jp:'吐き気がします', romaji:'Hakike ga shimasu', en:'I feel nauseous', tip:'吐き気 = nausea. 吐く (haku) = to vomit. 気持ち悪い (kimochi warui) is the casual way to say you feel sick/nauseous.', zh:'想吐 / 恶心', pinyin:'xiǎng tù / ěxīn' },
+          { jp:'〜がズキズキします', romaji:'~ga zukizuki shimasu', en:'~ is throbbing / I have a sharp, pulsating pain in ~', tip:'ズキズキ = pulsating pain onomatopoeia. 歯がズキズキ = throbbing toothache. グーグー = growling stomach. シクシク = dull aching pain.', examples:[{ jp:'奥歯がズキズキして眠れません。', romaji:'Okuba ga zukizuki shite nemuremasen.', en:'My back molar is throbbing and I can\'t sleep.' }], zh:'～阵阵作痛', pinyin:'~ zhènzhèn zuòtòng' },
+          { jp:'怠いです', romaji:'Darui desu', en:'I feel heavy/lethargic / I have no energy', tip:'怠い (darui) = the specific feeling of physical heaviness and lack of energy. Used for general malaise, flu-like fatigue, or the feeling after a long day. More specific than 疲れた.', zh:'浑身乏力 / 没精神', pinyin:'húnshēn fálì / méi jīngshén' },
+          { jp:'風邪をひきました', romaji:'Kaze wo hikimashita', en:'I caught a cold', tip:'風邪 (kaze) = cold/flu. 風邪をひく = to catch a cold. 鼻水が出る = runny nose. せきが出る = coughing. くしゃみが出る = sneezing.', zh:'感冒了', pinyin:'gǎnmào le' },
+          { jp:'〜から血が出ています', romaji:'~kara chi ga dete imasu', en:'I\'m bleeding from ~', tip:'血 (chi/ketsu) = blood. 出血する (shukketsu suru) = to bleed (medical term). 傷口 (kizuguchi) = wound.', examples:[{ jp:'指から血が出ています。', romaji:'Yubi kara chi ga dete imasu.', en:'I\'m bleeding from my finger.' }], zh:'～在出血', pinyin:'~ zài chūxiě' },
+          { jp:'下痢をしています / 便秘です', romaji:'Geri wo shite imasu / Benpi desu', en:'I have diarrhea / I\'m constipated', tip:'下痢 (geri) = diarrhea. 便秘 (benpi) = constipation. Essential to communicate to doctors. お腹の調子が悪い = my stomach/gut condition is bad (polite vague version).', zh:'拉肚子 / 便秘', pinyin:'lā dùzi / biànmì' },
+          { jp:'アレルギー反応が出ています', romaji:'Arerugī hannō ga dete imasu', en:'I\'m having an allergic reaction', tip:'アレルギー反応 = allergic reaction. じんましん (urticaria/hives) = 蕁麻疹. アナフィラキシー (anaphylaxis) = severe reaction. Say this clearly to any medical professional.', zh:'过敏反应发作了', pinyin:'guòmǐn fǎnyìng fāzuò le' },
+        ]
+      },
+      {
+        title: 'At the Clinic / Hospital (病院・クリニック)',
+        note: 'Japan has excellent healthcare. Clinics (クリニック/診療所) handle general and specialist care. Bring your 健康保険証 (health insurance card). Same-day walk-ins are usually possible for minor illness.',
+        phrases: [
+          { jp:'保険証はありますか？', romaji:'Hokensha wa arimasu ka?', en:'Do you have your insurance card?', tip:'健康保険証 (kenkō hokensha) = national health insurance card. Covers 70% of most costs for Japanese residents. Always carry it.', zh:'有保险卡吗？', pinyin:'yǒu bǎoxiǎn kǎ ma?' },
+          { jp:'〜科を受診したいのですが', romaji:'~ka wo jushinshin shitai no desu ga', en:'I\'d like to see a doctor in the ~ department', tip:'内科 (naika) = internal medicine/general. 外科 (geka) = surgery. 皮膚科 (hifuka) = dermatology. 耳鼻科 (jibika) = ENT. 婦人科 (fujinka) = gynecology. 歯科 (shika) = dentistry.', zh:'我想看～科', pinyin:'wǒ xiǎng kàn ~ kē' },
+          { jp:'いつからですか？', romaji:'Itsu kara desu ka?', en:'When did it start?', tip:'The doctor\'s first question. Answer: 〜から (since ~) or 〜日前から (since ~ days ago). 昨日から = since yesterday.', zh:'从什么时候开始的？', pinyin:'cóng shénme shíhou kāishǐ de?' },
+          { jp:'お薬のアレルギーはありますか？', romaji:'Okusuri no arerugī wa arimasu ka?', en:'Do you have any drug allergies?', tip:'Standard medical intake question. ありません = no allergies. ペニシリンにアレルギーがあります = I\'m allergic to penicillin.', zh:'有药物过敏吗？', pinyin:'yǒu yàowù guòmǐn ma?' },
+          { jp:'予約なしで診てもらえますか？', romaji:'Yoyaku nashi de mite moraemasu ka?', en:'Can I be seen without an appointment?', tip:'Many clinics accept walk-ins (当日受付). University hospitals and specialists usually require referrals (紹介状).', zh:'没有预约可以看诊吗？', pinyin:'méiyǒu yùyuē kěyǐ kànzhěn ma?' },
+          { jp:'紹介状はありますか？', romaji:'Shōkaijō wa arimasu ka?', en:'Do you have a referral letter?', tip:'紹介状 (shōkaijō) = referral from a general doctor to a specialist. Required at large hospitals. Without one, you pay an extra 特別料金 (special surcharge).', zh:'有转诊单吗？', pinyin:'yǒu zhuǎnzhěn dān ma?' },
+          { jp:'処方箋を出していただけますか？', romaji:'Shohōsen wo dashite itadakemasu ka?', en:'Could you write me a prescription?', tip:'処方箋 = prescription. Take it to a 調剤薬局 (pharmacy). Many hospitals have one attached.', zh:'能给我开处方吗？', pinyin:'néng gěi wǒ kāi chǔfāng ma?' },
+          { jp:'どのくらいで治りますか？', romaji:'Dono kurai de naorimasu ka?', en:'How long will it take to heal?', tip:'治る (naoru) = to heal/get better. A natural follow-up question after diagnosis.', zh:'大概多久能好？', pinyin:'dàgài duōjiǔ néng hǎo?' },
+        ]
+      },
+      {
+        title: 'Mental Health & Wellbeing (メンタルヘルス)',
+        note: 'Mental health conversation is growing in Japan but still carries stigma. These phrases let you express your state or support someone else — whether in a clinical context or just with a friend.',
+        phrases: [
+          { jp:'気分が落ち込んでいます', romaji:'Kibun ga ochikonde imasu', en:'I\'m feeling down / depressed', tip:'落ち込む = to sink/fall down (emotionally). 気分が落ち込む is the go-to phrase for feeling low. うつ病 (utsubyō) = clinical depression.', zh:'情绪很低落', pinyin:'qíngxù hěn dīluò' },
+          { jp:'眠れない夜が続いています', romaji:'Nemurenai yoru ga tsuzuite imasu', en:'I\'ve been having nights where I can\'t sleep', tip:'眠れない = cannot sleep. 続く (tsuzuku) = to continue. 不眠症 (fumin-shō) = insomnia. A natural way to describe sleep problems without clinical framing.', zh:'已经连续好几晚睡不着了', pinyin:'yǐjīng liánxù hǎo jǐ wǎn shuì bù zháo le' },
+          { jp:'誰かに話を聞いてもらいたい', romaji:'Dareka ni hanashi wo kiite moraitai', en:'I want someone to listen to me', tip:'話を聞いてもらう = to have someone listen to you. The desire to be heard — not necessarily to get advice. Japanese support culture emphasizes listening over advising.', zh:'我想找人倾诉', pinyin:'wǒ xiǎng zhǎo rén qīngsù' },
+          { jp:'プレッシャーを感じています', romaji:'Puresshaā wo kanjite imasu', en:'I\'m feeling a lot of pressure', tip:'プレッシャー = pressure (loanword). 重圧 (jūatsu) = heavy pressure (more literary). 〜のプレッシャーがある = there\'s pressure from ~.', zh:'感受到了很大的压力', pinyin:'gǎnshòu dào le hěndà de yālì' },
+          { jp:'心が疲れています', romaji:'Kokoro ga tsukarete imasu', en:'My heart/mind is exhausted / emotionally drained', tip:'心 (kokoro) = heart/mind/spirit. 体が疲れた (body tired) vs 心が疲れた (emotionally drained). The distinction matters to Japanese speakers.', zh:'心累了', pinyin:'xīn lèi le', zhNote:'心累了 in Chinese is the near-identical expression — emotional rather than physical exhaustion.' },
+          { jp:'少し休養が必要です', romaji:'Sukoshi kyūyō ga hitsuyō desu', en:'I need some rest / recuperation', tip:'休養 (kyūyō) = rest and recuperation (more medical/deliberate than 休み). Doctors sometimes prescribe 休養 for burnout.', zh:'我需要好好休息一下', pinyin:'wǒ xūyào hǎohǎo xiūxi yīxià' },
+          { jp:'カウンセリングを受けたいのですが', romaji:'Kaunseringu wo uketai no desu ga', en:'I\'d like to get counselling', tip:'カウンセリング = counselling/therapy. 心療内科 (shinryō naika) = psychosomatic medicine clinic — the most accessible entry point for mental health care in Japan.', zh:'我想接受心理咨询', pinyin:'wǒ xiǎng jiēshòu xīnlǐ zīxún' },
+          { jp:'話を聞かせてください', romaji:'Hanashi wo kikasete kudasai', en:'Please tell me what\'s going on / Let me listen to you', tip:'Said to someone who seems troubled. Inviting them to share. 何かあった？= did something happen? (casual check-in)', zh:'你说吧，我听着', pinyin:'nǐ shuō ba, wǒ tīng zhe' },
+        ]
+      },
+      {
+        title: 'Body & Physical Sensations',
+        phrases: [
+          { jp:'肩がこっています', romaji:'Kata ga kotte imasu', en:'My shoulders are stiff / I have shoulder tension', tip:'肩こり (katakori) = shoulder stiffness — extremely common in Japan. Whole massage industry exists for it. 首がこっている = stiff neck.', zh:'肩膀很酸', pinyin:'jiānbǎng hěn suān' },
+          { jp:'二日酔いです', romaji:'Futsukayoi desu', en:'I\'m hungover', tip:'二日酔い = two-day drunk (the morning-after effect). 頭が痛い、吐き気がする、水が欲しい — the universal symptoms. ウコン (ukon) = turmeric — Japanese cure-all for hangover prevention.', zh:'宿醉', pinyin:'sùzuì' },
+          { jp:'筋肉痛です', romaji:'Kinnikutsū desu', en:'I have muscle soreness (DOMS)', tip:'筋肉痛 (kinnikutsū) = delayed onset muscle soreness. 筋肉 = muscle. 痛 = pain. 翌日筋肉痛 = next-day soreness. 二日後に出る = hits two days later.', zh:'肌肉酸痛', pinyin:'jīròu suāntòng' },
+          { jp:'むくんでいます', romaji:'Mukunde imasu', en:'I\'m swollen / bloated / retaining water', tip:'むくむ = to swell/puff up. 顔がむくんでいる = face is puffy (especially in the morning). 足がむくんでいる = legs are swollen (from sitting on flights, etc.).', zh:'浮肿了', pinyin:'fúzhǒng le' },
+          { jp:'目が充血しています', romaji:'Me ga jūketsu shite imasu', en:'My eyes are bloodshot / red', tip:'充血 (jūketsu) = congestion/rush of blood. 目薬 (megusuri) = eye drops — sold everywhere in Japan. 疲れ目 (tsukareme) = eye strain.', zh:'眼睛充血了', pinyin:'yǎnjīng chōngxiě le' },
+          { jp:'腰が痛いです', romaji:'Koshi ga itai desu', en:'I have lower back pain', tip:'腰 (koshi) = lower back/waist. 腰痛 (yōtsū) = lower back pain — among the most common complaints at Japanese clinics. ぎっくり腰 (gikkuri-goshi) = slipped disc/sudden back spasm.', zh:'腰痛', pinyin:'yāotòng' },
+          { jp:'花粉症がひどくて…', romaji:'Kafunshō ga hidokute…', en:'My hay fever is so bad…', tip:'花粉症 (kafunshō) = pollen allergy. Japan\'s spring cedar pollen season affects ~40% of the population. マスク (mask) and 目薬 (eye drops) are ubiquitous coping mechanisms.', zh:'花粉症很严重……', pinyin:'huāfěnzhèng hěn yánzhòng...' },
+        ]
+      },
+    ]
+  },
+
+  {
+    id: 'int-arts',
+    title: 'Entertainment & Culture',
+    icon: '🎭',
+    groups: [
+      {
+        title: 'Movies, TV & Streaming (映画・ドラマ)',
+        note: 'Japanese has rich vocabulary for discussing film and TV — from casual reactions to deeper analysis. These phrases work for anything from Netflix dramas to Ghibli films.',
+        phrases: [
+          { jp:'この映画、どう思った？', romaji:'Kono eiga, dō omotta?', en:'What did you think of this movie?', tip:'The casual open-ended film review question. How you answer: 面白かった (interesting/good), 微妙だった (so-so), 号泣した (cried my eyes out).', zh:'你觉得这部电影怎么样？', pinyin:'nǐ juéde zhè bù diànyǐng zěnmeyàng?' },
+          { jp:'号泣した', romaji:'Gōkyū shita', en:'I bawled / I cried my eyes out', tip:'号泣 (gōkyū) = weeping/sobbing loudly. 泣ける映画 (nakeru eiga) = a movie that makes you cry. 感動した = I was deeply moved. Japanese film/TV culture values emotional impact highly.', zh:'哭得稀里哗啦 / 号啕大哭', pinyin:'kū de xīlīhuālā' },
+          { jp:'伏線回収がうまい', romaji:'Fukusen kaishū ga umai', en:'The foreshadowing payoff was brilliant', tip:'伏線 (fukusen) = hidden setup/foreshadowing. 回収 (kaishū) = collection/payoff. This is the key technical compliment in Japanese pop culture discussion. 伏線を張る = to plant foreshadowing.', zh:'铺垫的回收很精妙', pinyin:'pūdiàn de huíshōu hěn jīngmiào' },
+          { jp:'続きが気になる', romaji:'Tsuzuki ga ki ni naru', en:'I can\'t wait to see what happens next / cliffhanger feeling', tip:'続き (tsuzuki) = continuation. 気になる = to be curious/concerned about. 最終回が気になりすぎる = I\'m too hooked to stop watching the finale.', zh:'好想知道后续', pinyin:'hǎo xiǎng zhīdào hòuxù' },
+          { jp:'原作より映画の方が良かった', romaji:'Gensaku yori eiga no hō ga yokatta', en:'I liked the movie better than the original (manga/book)', tip:'原作 (gensaku) = original source material. The reverse: 映画より原作の方が断然いい = the original is way better than the film. Classic fan debate.', zh:'比起原著，我更喜欢电影', pinyin:'bǐqǐ yuánzhù, wǒ gèng xǐhuān diànyǐng' },
+          { jp:'最近ドラマにはまっています', romaji:'Saikin dorama ni hamatte imasu', en:'I\'ve been really into a drama lately', tip:'はまる = to get hooked on. ドラマ = TV drama. 一気見する (ikki-mi suru) = to binge-watch. 追いかける = to follow as it airs.', zh:'最近沉迷于追剧', pinyin:'zuìjìn chénmí yú zhuī jù' },
+          { jp:'〜が主演しています', romaji:'~ga shuen shite imasu', en:'~ is starring in it', tip:'主演 (shuen) = leading role/star. 出演 (shūen) = appearing in. 監督 (kantoku) = director. 脚本 (kyakuhon) = screenplay.', zh:'～主演', pinyin:'~ zhǔyǎn' },
+          { jp:'字幕で見ますか、吹き替えで見ますか？', romaji:'Jimaku de mimasu ka, fukikae de mimasu ka?', en:'Do you watch with subtitles or dubbed?', tip:'字幕 (jimaku) = subtitles. 吹き替え (fukikae) = dubbing. Japan has excellent dub culture — many prefer dubbed for animation.', zh:'你是看字幕版还是配音版？', pinyin:'nǐ shì kàn zìmù bǎn háishì pèiyīn bǎn?' },
+        ]
+      },
+      {
+        title: 'Music & Live Events (音楽・ライブ)',
+        note: 'Japan\'s music scene ranges from idol groups to jazz bars to world-class orchestras. Live music culture (ライブ) is huge — and karaoke is a social institution.',
+        phrases: [
+          { jp:'好きなアーティストは誰ですか？', romaji:'Suki na āsutisuto wa dare desu ka?', en:'Who\'s your favorite artist?', tip:'Great conversation opener. アーティスト = artist (pop/rock). 音楽家 (ongakuka) = musician (classical). バンド (bando) = band.', zh:'你喜欢的歌手是谁？', pinyin:'nǐ xǐhuān de gēshǒu shì shuí?' },
+          { jp:'ライブに行ったことがありますか？', romaji:'Raibu ni itta koto ga arimasu ka?', en:'Have you ever been to a live concert?', tip:'ライブ = live concert. コンサート (konsāto) = concert (often larger/classical). フェス (fesu) = music festival. チケットを取る = to get tickets.', zh:'你去过演唱会吗？', pinyin:'nǐ qùguò yǎnchànghuì ma?' },
+          { jp:'その曲、めちゃくちゃいいよね', romaji:'Sono kyoku, mechakucha ii yo ne', en:'That song is incredible, isn\'t it', tip:'曲 (kyoku) = song/piece. めちゃくちゃ = incredibly. リピートしてる = I have it on repeat. 中毒性がある (chūdokusei ga aru) = addictive.', zh:'那首歌真的超好听', pinyin:'nà shǒu gē zhēn de chāo hǎotīng' },
+          { jp:'カラオケに行きましょう！', romaji:'Karaoke ni ikimashō!', en:'Let\'s go to karaoke!', tip:'Japan\'s カラオケ = room-rental (not stage). You book a private room by the hour. 一人カラオケ (hitorikaraoke) = solo karaoke, completely normal and loved.', zh:'去唱卡拉OK吧！', pinyin:'qù chàng kǎlā OK ba!' },
+          { jp:'十八番（おはこ）は何ですか？', romaji:'Ohako wa nan desu ka?', en:'What\'s your signature karaoke song?', tip:'十八番 (おはこ) = one\'s best/specialty song. Originally from kabuki (the 18th item in the collection of Ichikawa Danjūrō\'s best performances). Now = your go-to karaoke number.', zh:'你的拿手歌是什么？', pinyin:'nǐ de náshǒu gē shì shénme?' },
+          { jp:'音楽を聴くと元気が出ます', romaji:'Ongaku wo kiku to genki ga demasu', en:'Listening to music energizes me / gives me strength', tip:'元気が出る = energy comes out = I feel energized. 音楽の力 = the power of music. BGMにする = to use as background music.', zh:'听音乐就会充满活力', pinyin:'tīng yīnyuè jiù huì chōngmǎn huólì' },
+          { jp:'〜の音楽、どんなジャンルですか？', romaji:'~no ongaku, donna janru desu ka?', en:'What genre is ~\'s music?', tip:'ジャンル = genre. J-pop、ロック (rock)、ジャズ (jazz)、演歌 (enka = traditional ballad)、ボカロ (Vocaloid). 演歌 is Japanese country music — deeply beloved by older generations.', zh:'～的音乐是什么风格？', pinyin:'~ de yīnyuè shì shénme fēnggé?' },
+        ]
+      },
+      {
+        title: 'Manga, Anime & Books (漫画・アニメ・読書)',
+        phrases: [
+          { jp:'最近読んだ漫画は？', romaji:'Saikin yonda manga wa?', en:'What manga have you read recently?', tip:'漫画 = manga. 少年 (shōnen) = boys\' genre (action/adventure). 少女 (shōjo) = girls\' romance. 青年 (seinen) = adult/mature themes. 百合/BL = female/male romance between same gender.', zh:'最近看了什么漫画？', pinyin:'zuìjìn kàn le shénme mànghuà?' },
+          { jp:'どんなジャンルが好きですか？', romaji:'Donna janru ga suki desu ka?', en:'What genres do you like?', tip:'SFもの = sci-fi genre. ホラー (horā) = horror. ファンタジー (fantajī) = fantasy. 日常もの (nichijōmono) = slice-of-life. ミステリー (misuterī) = mystery.', zh:'你喜欢什么类型？', pinyin:'nǐ xǐhuān shénme lèixíng?' },
+          { jp:'続きが出るのが待ち遠しい', romaji:'Tsuzuki ga deru no ga machidōshii', en:'I can\'t wait for the next volume', tip:'待ち遠しい (machidōshii) = longing impatiently for something to arrive. 発売日 (hatsumbaibi) = release date. 最終巻 (saishūkan) = final volume.', zh:'好期待下一集出来', pinyin:'hǎo qīdài xià yī jí chūlái' },
+          { jp:'キャラクターに感情移入できる', romaji:'Kyarakutā ni kanjō-inyū dekiru', en:'I can empathize with the characters / I relate to them deeply', tip:'感情移入 (kanjō-inyū) = emotional projection/identification with a character. 没入感がある (botsunyūkan ga aru) = immersive. 泣けるキャラ = characters that make you cry.', zh:'能对角色产生共鸣', pinyin:'néng duì juésè chǎnshēng gòngmíng' },
+          { jp:'アニメ化されるらしい', romaji:'Anime-ka sareru rashii', en:'Apparently it\'s getting an anime adaptation', tip:'〜化される = to be converted into ~ (adaptation). 映画化 (eiga-ka) = film adaptation. 実写化 (jissha-ka) = live-action adaptation. らしい = apparently (from hearsay).', zh:'据说要动画化了', pinyin:'jùshuō yào dònghuà huà le' },
+          { jp:'既読ですか？まだ読んでない？', romaji:'Kidoku desu ka? Mada yonde nai?', en:'Have you read it yet? Haven\'t read it yet?', tip:'既読 (kidoku) = already-read. Borrowed from messaging (read receipt) to book/manga context. ネタバレ (netabare) = spoiler — always ask before discussing!', zh:'看过了吗？还没看？', pinyin:'kàn guò le ma? hái méi kàn?' },
+          { jp:'ネタバレしないでください！', romaji:'Netabare shinai de kudasai!', en:'Don\'t spoil it for me!', tip:'ネタバレ = spoiler (ネタ = content + バレる = to be revealed). One of the most important social rules in Japanese pop culture. 未読の人への配慮 = consideration for those who haven\'t read/watched yet.', zh:'不要剧透！', pinyin:'bù yào jù tòu!' },
+        ]
+      },
+      {
+        title: 'Art, Museums & Traditional Culture (美術・伝統文化)',
+        note: 'Japan\'s cultural heritage — from ukiyo-e to tea ceremony to contemporary art — is extraordinarily accessible. These phrases help you engage meaningfully with it.',
+        phrases: [
+          { jp:'〜展に行ってきました', romaji:'~ten ni itte kimashita', en:'I went to the ~ exhibition', tip:'展 (ten) = exhibition. 美術館 (bijutsukan) = art museum. 博物館 (hakubutsukan) = museum (natural history, science, etc.). 常設展 = permanent collection. 企画展 = special exhibition.', zh:'去看了～展', pinyin:'qù kàn le ~ zhǎn' },
+          { jp:'入場料はいくらですか？', romaji:'Nyūjōryō wa ikura desu ka?', en:'How much is the admission fee?', tip:'入場料 = admission. 無料 (muryō) = free. 学割 (gakuwari) = student discount. 障害者割引 = disability discount. Many national museums have free days.', zh:'门票多少钱？', pinyin:'ménpiào duōshǎo qián?' },
+          { jp:'茶道を体験してみたいです', romaji:'Sadō wo taiken shite mitai desu', en:'I\'d like to experience the tea ceremony', tip:'茶道 (sadō/chadō) = way of tea. 茶室 (chashitsu) = tea room. 和菓子 (wagashi) = traditional sweets served with tea. Many temples and cultural centers offer 60–90 min beginner experiences.', zh:'我想体验一下茶道', pinyin:'wǒ xiǎng tǐyàn yīxià chádào' },
+          { jp:'〜に興味があります', romaji:'~ni kyōmi ga arimasu', en:'I\'m interested in ~', tip:'興味 (kyōmi) = interest. 書道 (shodō) = calligraphy. 生け花 (ikebana) = flower arrangement. 能 (nō) / 歌舞伎 (kabuki) = traditional theatre. 陶芸 (tōgei) = pottery.', examples:[{ jp:'日本の伝統工芸に興味があります。', romaji:'Nihon no dentō kōgei ni kyōmi ga arimasu.', en:'I\'m interested in Japanese traditional crafts.' }], zh:'我对～感兴趣', pinyin:'wǒ duì ~ gǎn xìngqù' },
+          { jp:'この作品の背景を教えていただけますか？', romaji:'Kono sakuhin no haikei wo oshiete itadakemasu ka?', en:'Could you tell me about the background of this work?', tip:'作品 (sakuhin) = work/piece. 背景 (haikei) = background/context. 解説 (kaisetsu) = explanation/commentary. Many museums have audio guides (音声ガイド) — rent them.', zh:'能告诉我这件作品的创作背景吗？', pinyin:'néng gàosù wǒ zhè jiàn zuòpǐn de chuàngzuò bèijǐng ma?' },
+          { jp:'和室に泊まりたいです', romaji:'Washitsu ni tomaritai desu', en:'I\'d like to stay in a Japanese-style room', tip:'和室 (washitsu) = traditional Japanese room with tatami and futon. 旅館 (ryokan) = traditional inn. 浴衣 (yukata) = provided. 仲居さん (nakaisan) = ryokan hostess. One of the quintessential Japan experiences.', zh:'我想住日式房间', pinyin:'wǒ xiǎng zhù rìshì fángjiān' },
+          { jp:'伝統工芸品はどこで買えますか？', romaji:'Dentō kōgeihin wa doko de kaemasu ka?', en:'Where can I buy traditional crafts?', tip:'伝統工芸品 = traditional craft goods. デパートの物産展 (physical store exhibitions) and 道の駅 (roadside stations) are excellent. 有田焼 (porcelain), 西陣織 (silk weaving), 江戸切子 (glass) — region-specific crafts.', zh:'哪里可以买到传统工艺品？', pinyin:'nǎlǐ kěyǐ mǎidào chuántǒng gōngyìpǐn?' },
         ]
       },
     ]
