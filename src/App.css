@@ -882,13 +882,24 @@ mark { background: #fef08a; border-radius: 2px; }
   background: var(--text);
   color: #fff;
   border-radius: var(--radius);
-  padding: 2rem 1.5rem;
+  padding: 1.75rem 1.5rem 1.25rem;
   text-align: center;
   margin-bottom: 1.25rem;
 }
-.dq-jp { font-family: var(--jp-font); font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem; }
-.dq-romaji { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-bottom: 0.75rem; }
-.dq-prompt { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.06em; }
+.dq-type-badge {
+  display: inline-block;
+  font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.7);
+  border-radius: 99px; padding: 0.2rem 0.65rem; margin-bottom: 1rem;
+}
+.dq-jp { font-family: var(--jp-font); font-size: 2rem; font-weight: 700; margin-bottom: 0.4rem; }
+.dq-en-question { font-size: 1.4rem; font-weight: 700; margin: 0.75rem 0; line-height: 1.35; }
+.dq-romaji { font-size: 0.88rem; color: rgba(255,255,255,0.55); margin-bottom: 0.5rem; }
+.dq-card-listen { margin: 0.5rem 0; }
+.dq-card-listen .speak-btn { background: rgba(255,255,255,0.15); color: #fff; border-color: rgba(255,255,255,0.2); }
+.dq-card-listen .speak-btn:hover { background: rgba(255,255,255,0.25); }
+.dq-prompt { font-size: 0.78rem; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.06em; margin-top: 0.75rem; }
+.dq-section-tag { font-size: 0.7rem; color: rgba(255,255,255,0.3); margin-top: 0.4rem; }
 
 .dq-options { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1rem; }
 .dq-opt {
@@ -910,17 +921,43 @@ mark { background: #fef08a; border-radius: 2px; }
 .dq-opt--correct .dq-opt-letter { background: #dcfce7; color: var(--green); }
 .dq-opt--wrong .dq-opt-letter { background: #fee2e2; color: var(--red); }
 .dq-opt-text { flex: 1; }
+.dq-opt-jp-wrap { display: flex; flex-direction: column; gap: 0.15rem; }
+.dq-opt-jp { font-family: var(--jp-font); font-size: 1rem; font-weight: 600; }
+.dq-opt-romaji-small { font-size: 0.72rem; color: var(--text-dim); }
+.dq-opt--correct .dq-opt-romaji-small { color: #166534; }
+.dq-opt--wrong .dq-opt-romaji-small { color: #991b1b; }
 
-.dq-feedback { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.dq-verdict { font-size: 0.9rem; font-weight: 600; flex: 1; }
-.dq-verdict--ok { color: var(--green); }
-.dq-verdict--miss { color: var(--red); }
+/* Learning card shown after answering */
+.dq-learn-card {
+  border-radius: var(--radius); padding: 1.25rem 1.25rem 1rem;
+  border: 2px solid transparent; margin-bottom: 0.5rem;
+  display: flex; flex-direction: column; gap: 0.35rem;
+}
+.dq-learn-card--ok   { background: #f0fdf4; border-color: var(--green); }
+.dq-learn-card--miss { background: #fff7ed; border-color: #f59e0b; }
+.dq-learn-verdict { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }
+.dq-learn-card--ok   .dq-learn-verdict { color: var(--green); }
+.dq-learn-card--miss .dq-learn-verdict { color: #d97706; }
+.dq-learn-phrase { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.dq-learn-jp { font-family: var(--jp-font); font-size: 1.5rem; font-weight: 700; color: var(--text); }
+.dq-learn-romaji { font-size: 0.82rem; color: var(--text-dim); }
+.dq-learn-en { font-size: 1rem; font-weight: 600; color: var(--text); }
+.dq-learn-tip { font-size: 0.82rem; color: #92400e; background: #fef3c7; border-radius: 6px; padding: 0.45rem 0.6rem; line-height: 1.4; }
+.dq-learn-section { font-size: 0.72rem; color: var(--text-dim); }
+
 .dq-next {
+  align-self: flex-end; margin-top: 0.5rem;
   padding: 0.55rem 1.25rem; background: var(--blue); color: #fff;
   border: none; border-radius: 8px; font-size: 0.9rem; font-weight: 600;
   cursor: pointer; transition: background 0.15s; white-space: nowrap;
 }
 .dq-next:hover { background: #2563eb; }
+
+.dq-practice-badge {
+  display: inline-block; font-size: 0.72rem; font-weight: 600;
+  background: #fef9c3; color: #854d0e; border-radius: 99px;
+  padding: 0.1rem 0.5rem; margin-left: 0.5rem;
+}
 
 .dq-done {
   display: flex; flex-direction: column; align-items: center;
@@ -930,7 +967,15 @@ mark { background: #fef08a; border-radius: 2px; }
 .dq-done-score { font-size: 3rem; font-weight: 800; color: var(--text); }
 .dq-done-pct { font-size: 1.1rem; color: var(--blue); font-weight: 700; }
 .dq-done-msg { font-size: 1.1rem; font-weight: 600; margin-top: 0.5rem; }
+.dq-done-tip { font-size: 0.84rem; color: #92400e; background: #fef3c7; border-radius: 8px; padding: 0.5rem 0.85rem; margin-top: 0.25rem; max-width: 320px; }
 .dq-done-sub { font-size: 0.82rem; color: var(--text-dim); margin-top: 0.5rem; }
+.dq-practice-btn {
+  margin-top: 1rem; padding: 0.65rem 1.5rem;
+  background: var(--content); border: 1.5px solid var(--border);
+  border-radius: 10px; font-size: 0.9rem; font-weight: 600;
+  color: var(--text); cursor: pointer; transition: all 0.15s;
+}
+.dq-practice-btn:hover { border-color: var(--blue); color: var(--blue); background: #eff6ff; }
 
 /* ── Hamburger (hidden on desktop) ───────────────────────────── */
 .hamburger {
